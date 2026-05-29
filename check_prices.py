@@ -18,7 +18,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 ROUTES_FILE = Path("routes.json")
-MAX_WORKERS = 10  # concurrent route checks — stays within Travelpayouts rate limits
+MAX_WORKERS = 15  # concurrent route checks
 
 
 def load_routes() -> list[dict]:
@@ -43,7 +43,7 @@ def check_route(api: TravelpayoutsAPI, route: dict, tg_token: str) -> int:
     alerts_sent = 0
 
     for deal in deals:
-        msg = notify.deal_message(origin, dest, deal)
+        msg = notify.deal_message(origin, dest, deal, currency=currency)
         if notify.send(chat_id, msg, token=tg_token):
             store.mark_alerted(origin, dest, deal["link"])
             alerts_sent += 1
