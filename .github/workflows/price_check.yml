@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 * * * *'      # every hour
   workflow_dispatch:           # allows manual "Run workflow" button in GitHub UI
+  push:
+    branches: [main]
+    paths-ignore: ['data/**']  # ignore price history commits to avoid loops
 
 jobs:
   check:
