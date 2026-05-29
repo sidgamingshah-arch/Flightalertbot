@@ -5,20 +5,18 @@ on:
     - cron: '0 * * * *'      # every hour
   workflow_dispatch:           # allows manual "Run workflow" button in GitHub UI
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   check:
     runs-on: ubuntu-latest
     permissions:
       contents: write          # needed to commit price history back to repo
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # fetch full history so git push works even after concurrent runs
           fetch-depth: 0
 
       - name: Set up Python
