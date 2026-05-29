@@ -43,7 +43,7 @@ def deal_message(origin: str, destination: str, deal: dict, currency: str = "INR
     return (
         f"🚨 *FLIGHT DEAL — {origin} → {destination}*\n\n"
         f"💰 *{sym}{deal['price']:,.0f}* _(30d avg: {sym}{deal['avg_price']:,.0f})_\n"
-        f"📉 *{deal['discount_pct']:.0f}% below average* · Z\\-score: {deal['z_score']}\n"
+        f"📉 *{deal['discount_pct']:.0f}% below average* (Z-score: {deal['z_score']})\n"
         f"📅 Departs: {deal['departure_date']}\n"
         f"🏷️ {deal['airline']} · {stops_label} · {deal['duration_hrs']}h\n\n"
         f"[Book Now]({deal['link']})"

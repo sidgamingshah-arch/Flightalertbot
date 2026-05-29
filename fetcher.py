@@ -24,7 +24,6 @@ class TravelpayoutsAPI:
         results = []
         today = datetime.utcnow()
 
-        # Query current month + next N months to build a wide price picture
         for offset in range(lookahead_months + 1):
             month = (today + relativedelta(months=offset)).strftime("%Y-%m")
             batch = self._fetch_month(origin, destination, month, currency)
@@ -38,7 +37,11 @@ class TravelpayoutsAPI:
                 seen.add(r["link"])
                 unique.append(r)
 
-        logger.info("Fetched %d unique fares for %s->%s", len(unique), origin, destination)
+        if unique:
+            logger.info("Fetched %d fares for %s->%s", len(unique), origin, destination)
+        else:
+            logger.warning("NO DATA returned for %s->%s (currency=%s)", origin, destination, currency)
+
         return unique
 
     def _fetch_month(
@@ -59,17 +62,24 @@ class TravelpayoutsAPI:
             resp.raise_for_status()
             body = resp.json()
         except requests.RequestException as e:
-            logger.error("Travelpayouts error %s->%s %s: %s", origin, destination, depart_date, e)
+            logger.error("API error %s->%s %s: %s", origin, destination, depart_date, e)
             return []
 
         if not body.get("success"):
-            logger.warning("API returned success=false for %s->%s %s", origin, destination, depart_date)
+            logger.warning("success=false for %s->%s %s: %s", origin, destination, depart_date, body)
+            return []
+
+        raw_data = body.get("data") or {}
+
+        # Travelpayouts keys data by destination code — try exact match first,
+        # then fall back to the first key in the response (handles city-code variants)
+        dest_data = raw_data.get(destination) or next(iter(raw_data.values()), {})
+
+        if not dest_data:
             return []
 
         flights = []
-        # Response: {"data": {"DEST": {"0": {...}, "1": {...}}}, "currency": "USD"}
-        dest_data = body.get("data", {}).get(destination, {})
-        for _transfer_count, info in dest_data.items():
+        for _transfers, info in dest_data.items():
             try:
                 link_path = info.get("link", "")
                 flights.append({
