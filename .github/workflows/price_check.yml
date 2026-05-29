@@ -5,6 +5,9 @@ on:
     - cron: '0 * * * *'      # every hour
   workflow_dispatch:           # allows manual "Run workflow" button in GitHub UI
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   check:
     runs-on: ubuntu-latest
