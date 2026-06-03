@@ -1,13 +1,101 @@
 {
-  "BOM-ORD": [
+  "BOM-CDG": [
     {
-      "price": 95449.0,
-      "airline": "AC",
-      "departure_date": "2026-06-23",
+      "price": 63367.0,
+      "airline": "EY",
+      "departure_date": "2026-06-12",
       "link": "",
-      "duration_hrs": 67.4,
+      "duration_hrs": 29.9,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:07.751334"
+      "checked_at": "2026-06-03T21:01:04.840457"
+    }
+  ],
+  "BOM-FCO": [
+    {
+      "price": 55115.0,
+      "airline": "QP",
+      "departure_date": "2026-06-08",
+      "link": "",
+      "duration_hrs": 49.7,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:04.843028"
+    }
+  ],
+  "BOM-LHR": [
+    {
+      "price": 57896.0,
+      "airline": "EY",
+      "departure_date": "2026-06-27",
+      "link": "",
+      "duration_hrs": 57.9,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:04.857115"
+    }
+  ],
+  "BOM-JFK": [
+    {
+      "price": 90593.0,
+      "airline": "BA",
+      "departure_date": "2026-06-25",
+      "link": "",
+      "duration_hrs": 41.9,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:04.903370"
+    }
+  ],
+  "BOM-FRA": [
+    {
+      "price": 56614.0,
+      "airline": "EY",
+      "departure_date": "2026-06-10",
+      "link": "",
+      "duration_hrs": 31.8,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:04.919301"
+    }
+  ],
+  "BOM-SFO": [
+    {
+      "price": 141535.0,
+      "airline": "AI",
+      "departure_date": "2026-06-05",
+      "link": "",
+      "duration_hrs": 91.4,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:05.212778"
+    }
+  ],
+  "BOM-LAX": [
+    {
+      "price": 121073.0,
+      "airline": "BR",
+      "departure_date": "2026-06-09",
+      "link": "",
+      "duration_hrs": 55.3,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:05.439746"
+    }
+  ],
+  "BOM-HKG": [
+    {
+      "price": 52657.0,
+      "airline": "VZ",
+      "departure_date": "2026-06-07",
+      "link": "",
+      "duration_hrs": 30.7,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:05.465456"
+    }
+  ],
+  "BOM-SIN": [
+    {
+      "price": 37412.0,
+      "airline": "MH",
+      "departure_date": "2026-06-17",
+      "link": "",
+      "duration_hrs": 35.9,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:05.472933"
     }
   ],
   "BOM-KUL": [
@@ -18,62 +106,73 @@
       "link": "",
       "duration_hrs": 41.8,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:07.764512"
+      "checked_at": "2026-06-03T21:01:05.485131"
     }
   ],
-  "BOM-DOH": [
+  "BOM-BKK": [
     {
-      "price": 30160.0,
-      "airline": "UL",
-      "departure_date": "2026-07-13",
+      "price": 27235.0,
+      "airline": "VZ",
+      "departure_date": "2026-06-13",
       "link": "",
-      "duration_hrs": 31.7,
+      "duration_hrs": 8.7,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.013189"
+      "checked_at": "2026-06-03T21:01:05.503834"
+    }
+  ],
+  "BOM-ORD": [
+    {
+      "price": 95470.0,
+      "airline": "AC",
+      "departure_date": "2026-06-23",
+      "link": "",
+      "duration_hrs": 67.4,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:05.511886"
+    }
+  ],
+  "BOM-HKT": [
+    {
+      "price": 33157.0,
+      "airline": "6E",
+      "departure_date": "2026-06-19",
+      "link": "",
+      "duration_hrs": 8.9,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:05.525457"
+    }
+  ],
+  "BOM-SGN": [
+    {
+      "price": 47718.0,
+      "airline": "6E",
+      "departure_date": "2026-06-09",
+      "link": "",
+      "duration_hrs": 20.5,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:05.540313"
+    }
+  ],
+  "BOM-CGK": [
+    {
+      "price": 50399.0,
+      "airline": "MH",
+      "departure_date": "2026-06-10",
+      "link": "",
+      "duration_hrs": 54.8,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:05.593217"
     }
   ],
   "BOM-NRT": [
     {
-      "price": 71459.0,
+      "price": 71475.0,
       "airline": "VZ",
       "departure_date": "2026-06-09",
       "link": "",
       "duration_hrs": 43.1,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.043378"
-    }
-  ],
-  "BOM-DXB": [
-    {
-      "price": 28008.0,
-      "airline": "GF",
-      "departure_date": "2026-08-12",
-      "link": "",
-      "duration_hrs": 17.8,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.117253"
-    }
-  ],
-  "BOM-PVG": [
-    {
-      "price": 45103.0,
-      "airline": "VJ",
-      "departure_date": "2026-07-08",
-      "link": "",
-      "duration_hrs": 35.2,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.128187"
-    }
-  ],
-  "BOM-JNB": [
-    {
-      "price": 57670.0,
-      "airline": "TC",
-      "departure_date": "2026-07-17",
-      "link": "",
-      "duration_hrs": 21.5,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.261694"
+      "checked_at": "2026-06-03T21:01:05.962713"
     }
   ],
   "BOM-AUH": [
@@ -84,7 +183,51 @@
       "link": "",
       "duration_hrs": 7.2,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.408160"
+      "checked_at": "2026-06-03T21:01:05.988848"
+    }
+  ],
+  "BOM-DOH": [
+    {
+      "price": 30160.0,
+      "airline": "UL",
+      "departure_date": "2026-07-13",
+      "link": "",
+      "duration_hrs": 31.7,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:06.006820"
+    }
+  ],
+  "BOM-DXB": [
+    {
+      "price": 28008.0,
+      "airline": "GF",
+      "departure_date": "2026-08-12",
+      "link": "",
+      "duration_hrs": 17.8,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:06.102443"
+    }
+  ],
+  "BOM-PVG": [
+    {
+      "price": 45103.0,
+      "airline": "VJ",
+      "departure_date": "2026-07-08",
+      "link": "",
+      "duration_hrs": 35.2,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:06.131937"
+    }
+  ],
+  "BOM-JNB": [
+    {
+      "price": 57670.0,
+      "airline": "TC",
+      "departure_date": "2026-07-17",
+      "link": "",
+      "duration_hrs": 21.5,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:06.280762"
     }
   ],
   "BOM-MLE": [
@@ -95,62 +238,7 @@
       "link": "",
       "duration_hrs": 16.4,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.568328"
-    }
-  ],
-  "DEL-CDG": [
-    {
-      "price": 66360.0,
-      "airline": "EY",
-      "departure_date": "2026-06-14",
-      "link": "",
-      "duration_hrs": 54.6,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.746786"
-    }
-  ],
-  "DEL-LHR": [
-    {
-      "price": 73998.0,
-      "airline": "AI",
-      "departure_date": "2026-06-04",
-      "link": "",
-      "duration_hrs": 31.3,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.768777"
-    }
-  ],
-  "BOM-KTM": [
-    {
-      "price": 29250.0,
-      "airline": "6E",
-      "departure_date": "2026-06-27",
-      "link": "",
-      "duration_hrs": 18.9,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.788635"
-    }
-  ],
-  "BOM-CMB": [
-    {
-      "price": 24666.0,
-      "airline": "UL",
-      "departure_date": "2026-08-04",
-      "link": "",
-      "duration_hrs": 5.0,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.889882"
-    }
-  ],
-  "DEL-FRA": [
-    {
-      "price": 55434.0,
-      "airline": "EY",
-      "departure_date": "2026-07-02",
-      "link": "",
-      "duration_hrs": 25.8,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.906731"
+      "checked_at": "2026-06-03T21:01:06.536844"
     }
   ],
   "BOM-EZE": [
@@ -161,7 +249,62 @@
       "link": "",
       "duration_hrs": 74.7,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:08.908549"
+      "checked_at": "2026-06-03T21:01:06.634115"
+    }
+  ],
+  "BOM-CMB": [
+    {
+      "price": 26156.0,
+      "airline": "UL",
+      "departure_date": "2026-07-28",
+      "link": "",
+      "duration_hrs": 5.0,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:06.658345"
+    }
+  ],
+  "DEL-CDG": [
+    {
+      "price": 66360.0,
+      "airline": "EY",
+      "departure_date": "2026-06-14",
+      "link": "",
+      "duration_hrs": 54.6,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:06.749110"
+    }
+  ],
+  "BOM-KTM": [
+    {
+      "price": 29257.0,
+      "airline": "6E",
+      "departure_date": "2026-06-27",
+      "link": "",
+      "duration_hrs": 18.9,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:06.756136"
+    }
+  ],
+  "DEL-FRA": [
+    {
+      "price": 55434.0,
+      "airline": "EY",
+      "departure_date": "2026-07-02",
+      "link": "",
+      "duration_hrs": 25.8,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:06.758038"
+    }
+  ],
+  "DEL-LHR": [
+    {
+      "price": 73998.0,
+      "airline": "AI",
+      "departure_date": "2026-06-04",
+      "link": "",
+      "duration_hrs": 31.3,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:06.805639"
     }
   ],
   "DEL-AMS": [
@@ -172,7 +315,7 @@
       "link": "",
       "duration_hrs": 69.7,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.009624"
+      "checked_at": "2026-06-03T21:01:06.974058"
     }
   ],
   "DEL-ZRH": [
@@ -183,18 +326,7 @@
       "link": "",
       "duration_hrs": 56.9,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.022435"
-    }
-  ],
-  "DEL-IST": [
-    {
-      "price": 45374.0,
-      "airline": "KU",
-      "departure_date": "2026-06-23",
-      "link": "",
-      "duration_hrs": 26.1,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.051674"
+      "checked_at": "2026-06-03T21:01:07.029346"
     }
   ],
   "DEL-MAD": [
@@ -205,73 +337,7 @@
       "link": "",
       "duration_hrs": 25.2,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.334380"
-    }
-  ],
-  "DEL-FCO": [
-    {
-      "price": 55314.0,
-      "airline": "SV",
-      "departure_date": "2026-06-23",
-      "link": "",
-      "duration_hrs": 45.0,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.341770"
-    }
-  ],
-  "DEL-ATH": [
-    {
-      "price": 52963.0,
-      "airline": "EY",
-      "departure_date": "2026-07-08",
-      "link": "",
-      "duration_hrs": 53.4,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.410898"
-    }
-  ],
-  "DEL-BCN": [
-    {
-      "price": 73289.0,
-      "airline": "QR",
-      "departure_date": "2026-06-23",
-      "link": "",
-      "duration_hrs": 34.3,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.481287"
-    }
-  ],
-  "DEL-CPH": [
-    {
-      "price": 71615.0,
-      "airline": "EK",
-      "departure_date": "2026-06-28",
-      "link": "",
-      "duration_hrs": 33.0,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.524518"
-    }
-  ],
-  "DEL-JFK": [
-    {
-      "price": 79988.0,
-      "airline": "SV",
-      "departure_date": "2026-07-18",
-      "link": "",
-      "duration_hrs": 48.6,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.530337"
-    }
-  ],
-  "DEL-SFO": [
-    {
-      "price": 96953.0,
-      "airline": "QR",
-      "departure_date": "2026-06-23",
-      "link": "",
-      "duration_hrs": 51.2,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.534376"
+      "checked_at": "2026-06-03T21:01:07.073053"
     }
   ],
   "DEL-VIE": [
@@ -282,7 +348,62 @@
       "link": "",
       "duration_hrs": 41.1,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.543706"
+      "checked_at": "2026-06-03T21:01:07.081745"
+    }
+  ],
+  "DEL-FCO": [
+    {
+      "price": 55326.0,
+      "airline": "SV",
+      "departure_date": "2026-06-23",
+      "link": "",
+      "duration_hrs": 45.0,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:07.136255"
+    }
+  ],
+  "DEL-IST": [
+    {
+      "price": 45374.0,
+      "airline": "KU",
+      "departure_date": "2026-06-23",
+      "link": "",
+      "duration_hrs": 26.1,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:07.159665"
+    }
+  ],
+  "DEL-BCN": [
+    {
+      "price": 73305.0,
+      "airline": "QR",
+      "departure_date": "2026-06-23",
+      "link": "",
+      "duration_hrs": 34.3,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:07.168510"
+    }
+  ],
+  "DEL-ATH": [
+    {
+      "price": 52963.0,
+      "airline": "EY",
+      "departure_date": "2026-07-08",
+      "link": "",
+      "duration_hrs": 53.4,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:07.170775"
+    }
+  ],
+  "DEL-CPH": [
+    {
+      "price": 71615.0,
+      "airline": "EK",
+      "departure_date": "2026-06-28",
+      "link": "",
+      "duration_hrs": 33.0,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:07.276952"
     }
   ],
   "DEL-YYZ": [
@@ -293,18 +414,29 @@
       "link": "",
       "duration_hrs": 54.9,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.606900"
+      "checked_at": "2026-06-03T21:01:07.298491"
     }
   ],
-  "DEL-YVR": [
+  "DEL-SFO": [
     {
-      "price": 114077.0,
-      "airline": "LX",
-      "departure_date": "2026-06-16",
+      "price": 83802.0,
+      "airline": "AI",
+      "departure_date": "2026-06-23",
       "link": "",
-      "duration_hrs": 59.2,
+      "duration_hrs": 79.0,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.674495"
+      "checked_at": "2026-06-03T21:01:07.374661"
+    }
+  ],
+  "DEL-SIN": [
+    {
+      "price": 51860.0,
+      "airline": "6E",
+      "departure_date": "2026-06-15",
+      "link": "",
+      "duration_hrs": 19.8,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:07.515186"
     }
   ],
   "DEL-BKK": [
@@ -315,7 +447,18 @@
       "link": "",
       "duration_hrs": 14.7,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.825689"
+      "checked_at": "2026-06-03T21:01:07.636277"
+    }
+  ],
+  "DEL-HKG": [
+    {
+      "price": 51659.0,
+      "airline": "SU",
+      "departure_date": "2026-06-04",
+      "link": "",
+      "duration_hrs": 29.3,
+      "stops": 0,
+      "checked_at": "2026-06-03T21:01:07.640464"
     }
   ],
   "DEL-KUL": [
@@ -326,1495 +469,18 @@
       "link": "",
       "duration_hrs": 33.9,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:09.837067"
+      "checked_at": "2026-06-03T21:01:07.641508"
     }
   ],
-  "BOM-YYZ": [
+  "DEL-YVR": [
     {
-      "price": 75014.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 24.1,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 82209.0,
-      "airline": "Scandinavian Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 18.7,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 82435.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 83331.0,
-      "airline": "Etihad",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 75014.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 30.1,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 81835.0,
-      "airline": "Etihad",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 25.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 92515.0,
-      "airline": "Air France",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 24.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 92625.0,
-      "airline": "KLM",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 97576.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.6,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 130696.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 174374.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    },
-    {
-      "price": 245686.0,
-      "airline": "Virgin Atlantic",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVlaQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 18.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:16.629867"
-    }
-  ],
-  "BOM-SYD": [
-    {
-      "price": 42008.0,
-      "airline": "Batik Air",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 16.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 44144.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 17.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 48414.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 18.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 52523.0,
-      "airline": "SriLankan",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 13.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 47494.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 48414.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 25.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 50758.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 50758.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 52075.0,
-      "airline": "Qatar Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 55822.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 62325.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    },
-    {
-      "price": 72911.0,
-      "airline": "Malaysia Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.7,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:19.675592"
-    }
-  ],
-  "DEL-SYD": [
-    {
-      "price": 43078.0,
-      "airline": "AirAsia X",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:20.731153"
-    },
-    {
-      "price": 45767.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:20.731153"
-    },
-    {
-      "price": 46470.0,
-      "airline": "Batik Air",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 17.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:20.731153"
-    },
-    {
-      "price": 52141.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 16.6,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:20.731153"
-    },
-    {
-      "price": 52459.0,
-      "airline": "SriLankan",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:20.731153"
-    },
-    {
-      "price": 49167.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:20.731153"
-    },
-    {
-      "price": 51814.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.6,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:20.731153"
-    },
-    {
-      "price": 69166.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDU1lEQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:20.731153"
-    }
-  ],
-  "BLR-LHR": [
-    {
-      "price": 31936.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    },
-    {
-      "price": 31936.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    },
-    {
-      "price": 37682.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 11.4,
+      "price": 114077.0,
+      "airline": "LX",
+      "departure_date": "2026-06-16",
+      "link": "",
+      "duration_hrs": 59.2,
       "stops": 0,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    },
-    {
-      "price": 46367.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 10.8,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    },
-    {
-      "price": 31936.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    },
-    {
-      "price": 32618.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.6,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    },
-    {
-      "price": 42663.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    },
-    {
-      "price": 48466.0,
-      "airline": "Virgin Atlantic",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 10.8,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    },
-    {
-      "price": 50759.0,
-      "airline": "Virgin Atlantic",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 11.1,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    },
-    {
-      "price": 50803.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 10.9,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:21.509632"
-    }
-  ],
-  "BLR-JFK": [
-    {
-      "price": 74637.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 84449.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 86223.0,
-      "airline": "Qatar Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.7,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 74637.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 84882.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 48.9,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 87125.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 25.1,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 87125.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 25.1,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 87125.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 25.1,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 95668.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 23.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 99437.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 101515.0,
-      "airline": "Etihad",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 118086.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    },
-    {
-      "price": 142490.0,
-      "airline": "Air France",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:22.754255"
-    }
-  ],
-  "BLR-SFO": [
-    {
-      "price": 99845.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.7,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 110167.0,
-      "airline": "Qatar Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 132066.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 23.7,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 135726.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 113884.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 29.0,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 115547.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 31.8,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 115547.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 31.8,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 115547.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 31.8,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 130284.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 34.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 135726.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 29.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 149092.0,
-      "airline": "Air France",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 23.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 162021.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.7,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 197207.0,
-      "airline": "Lufthansa",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    },
-    {
-      "price": 487081.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQkxScgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:23.652985"
-    }
-  ],
-  "HYD-LHR": [
-    {
-      "price": 33647.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    },
-    {
-      "price": 33647.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    },
-    {
-      "price": 36657.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 13.7,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    },
-    {
-      "price": 33647.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.7,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    },
-    {
-      "price": 34330.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    },
-    {
-      "price": 40529.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    },
-    {
-      "price": 42436.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 16.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    },
-    {
-      "price": 57938.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 10.6,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    },
-    {
-      "price": 64727.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 12.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    },
-    {
-      "price": 67823.0,
-      "airline": "Etihad",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 12.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:25.336150"
-    }
-  ],
-  "HYD-JFK": [
-    {
-      "price": 79304.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 30.3,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    },
-    {
-      "price": 81624.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    },
-    {
-      "price": 81624.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    },
-    {
-      "price": 95457.0,
-      "airline": "Etihad",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    },
-    {
-      "price": 96597.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    },
-    {
-      "price": 98663.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 51.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    },
-    {
-      "price": 100439.0,
-      "airline": "Etihad",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    },
-    {
-      "price": 119251.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    },
-    {
-      "price": 121558.0,
-      "airline": "Lufthansa",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    },
-    {
-      "price": 264049.0,
-      "airline": "KLM",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDSkZLQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:26.831492"
-    }
-  ],
-  "HYD-SFO": [
-    {
-      "price": 125874.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 33.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    },
-    {
-      "price": 136245.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    },
-    {
-      "price": 142770.0,
-      "airline": "KLM",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    },
-    {
-      "price": 102958.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 57.7,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    },
-    {
-      "price": 127026.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 27.4,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    },
-    {
-      "price": 136009.0,
-      "airline": "Qatar Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 50.8,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    },
-    {
-      "price": 136245.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 28.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    },
-    {
-      "price": 156379.0,
-      "airline": "flydubai",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 23.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    },
-    {
-      "price": 159668.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    },
-    {
-      "price": 225656.0,
-      "airline": "Lufthansa",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDSFlEcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:29.569945"
-    }
-  ],
-  "MAA-LHR": [
-    {
-      "price": 31754.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 31754.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 32413.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 13.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 31754.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 42630.0,
-      "airline": "Akasa Air",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 25.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 49245.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 17.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 50256.0,
-      "airline": "Etihad",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 13.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 51208.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 13.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 56392.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 63062.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 11.1,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    },
-    {
-      "price": 75048.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDTEhSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 12.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:30.897771"
-    }
-  ],
-  "MAA-SFO": [
-    {
-      "price": 92246.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 96072.0,
-      "airline": "Malaysia Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 35.8,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 125948.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 26.6,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 128812.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 23.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 135213.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 100929.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 59.5,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 115306.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 34.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 120534.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 30.7,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 135213.0,
-      "airline": "Emirates",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 28.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 243880.0,
-      "airline": "Qatar Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    },
-    {
-      "price": 485992.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDTUFBcgcIARIDU0ZPQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:35.256472"
-    }
-  ],
-  "BOM-MEL": [
-    {
-      "price": 31759.0,
-      "airline": "Vietjet",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 17.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 42373.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 44584.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 16.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 48055.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 18.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 48055.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 24.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 49132.0,
-      "airline": "Batik Air",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 48.8,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 51745.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 16.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 54632.0,
-      "airline": "Malaysia Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 55798.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 56368.0,
-      "airline": "SriLankan",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 13.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    },
-    {
-      "price": 72529.0,
-      "airline": "THAI",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:40.118796"
-    }
-  ],
-  "DEL-MEL": [
-    {
-      "price": 32081.0,
-      "airline": "Vietjet",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 18.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 49159.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 17.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 52566.0,
-      "airline": "SriLankan",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 43265.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 22.1,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 44982.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.5,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 48904.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 16.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 52582.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 16.6,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 53453.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 66485.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 12.2,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 66998.0,
-      "airline": "Singapore Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    },
-    {
-      "price": 72570.0,
-      "airline": "THAI",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTUVMQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:41.800111"
-    }
-  ],
-  "DEL-NRT": [
-    {
-      "price": 39397.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTlJUQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 11.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:43.501663"
-    },
-    {
-      "price": 26224.0,
-      "airline": "Vietjet",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTlJUQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 28.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:43.501663"
-    },
-    {
-      "price": 31149.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTlJUQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 27.6,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:43.501663"
-    },
-    {
-      "price": 34104.0,
-      "airline": "IndiGo",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTlJUQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 20.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:43.501663"
-    },
-    {
-      "price": 39185.0,
-      "airline": "Thai AirAsia X",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTlJUQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:43.501663"
-    },
-    {
-      "price": 39397.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTlJUQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 11.4,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:43.501663"
-    },
-    {
-      "price": 44731.0,
-      "airline": "Malaysia Airlines",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTlJUQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 15.6,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:43.501663"
-    },
-    {
-      "price": 45083.0,
-      "airline": "Korean Air",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTlJUQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 14.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:43.501663"
-    },
-    {
-      "price": 71492.0,
-      "airline": "JAL",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDREVMcgcIARIDTlJUQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 8.2,
-      "stops": 0,
-      "checked_at": "2026-06-03T20:01:43.501663"
-    }
-  ],
-  "BOM-YVR": [
-    {
-      "price": 81899.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.9,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:45.457807"
-    },
-    {
-      "price": 82016.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 32.8,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:45.457807"
-    },
-    {
-      "price": 86112.0,
-      "airline": "Cathay Pacific",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 19.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:45.457807"
-    },
-    {
-      "price": 98342.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 27.0,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:45.457807"
-    },
-    {
-      "price": 82016.0,
-      "airline": "Air India",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 32.8,
-      "stops": 2,
-      "checked_at": "2026-06-03T20:01:45.457807"
-    },
-    {
-      "price": 83648.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 37.2,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:45.457807"
-    },
-    {
-      "price": 84771.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 39.7,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:45.457807"
-    },
-    {
-      "price": 100566.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 24.3,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:45.457807"
-    },
-    {
-      "price": 113316.0,
-      "airline": "British Airways",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 26.8,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:45.457807"
-    },
-    {
-      "price": 293097.0,
-      "airline": "Lufthansa",
-      "departure_date": "2026-08-03",
-      "link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=INR&tfs=CBwQAhoeEgoyMDI2LTA4LTAzagcIARIDQk9NcgcIARIDWVZSQAFIAXABmAEC&tfu=EgIIAQ",
-      "duration_hrs": 21.0,
-      "stops": 1,
-      "checked_at": "2026-06-03T20:01:45.457807"
+      "checked_at": "2026-06-03T21:01:07.696430"
     }
   ]
 }
