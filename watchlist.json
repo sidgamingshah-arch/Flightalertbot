@@ -1,0 +1,43 @@
+{
+  "serpapi": {
+    "monthly_budget": 90,
+    "currency": "INR",
+    "schedule": {
+      "timezone": "Asia/Kolkata",
+      "probe_days": ["MON", "TUE", "WED", "THU", "FRI"],
+      "saturday": "alternate_even_week",
+      "probe_local_time": "09:00"
+    },
+    "trip": {
+      "type": "one_way",
+      "depart_offset_days": 60
+    }
+  },
+  "routes": [
+    {"from": "BOM", "to": "LHR", "priority": 1},
+    {"from": "BOM", "to": "JFK", "priority": 1},
+    {"from": "BOM", "to": "SFO", "priority": 1},
+    {"from": "BOM", "to": "YYZ", "priority": 1},
+    {"from": "BOM", "to": "SYD", "priority": 1},
+    {"from": "DEL", "to": "LHR", "priority": 1},
+    {"from": "DEL", "to": "JFK", "priority": 1},
+    {"from": "DEL", "to": "SFO", "priority": 1},
+    {"from": "DEL", "to": "YYZ", "priority": 1},
+    {"from": "DEL", "to": "SYD", "priority": 1},
+    {"from": "BLR", "to": "LHR", "priority": 1},
+    {"from": "BLR", "to": "JFK", "priority": 1},
+    {"from": "BLR", "to": "SFO", "priority": 1},
+    {"from": "HYD", "to": "LHR", "priority": 2},
+    {"from": "HYD", "to": "JFK", "priority": 2},
+    {"from": "HYD", "to": "SFO", "priority": 2},
+    {"from": "MAA", "to": "LHR", "priority": 2},
+    {"from": "MAA", "to": "SFO", "priority": 2},
+    {"from": "BOM", "to": "CDG", "priority": 2},
+    {"from": "DEL", "to": "CDG", "priority": 2},
+    {"from": "BOM", "to": "MEL", "priority": 2},
+    {"from": "DEL", "to": "MEL", "priority": 2},
+    {"from": "BOM", "to": "NRT", "priority": 3},
+    {"from": "DEL", "to": "NRT", "priority": 3},
+    {"from": "BOM", "to": "YVR", "priority": 3}
+  ]
+}

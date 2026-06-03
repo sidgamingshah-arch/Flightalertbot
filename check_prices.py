@@ -10,6 +10,7 @@ from pathlib import Path
 import store
 import detector
 import notify
+import serpapi_probe
 from fetcher import TravelpayoutsAPI
 
 logging.basicConfig(
@@ -49,28 +50,48 @@ def check_route(api: TravelpayoutsAPI, route: dict, tg_token: str) -> tuple[int,
         if notify.send(chat_id, msg, token=tg_token):
             store.mark_alerted(origin, dest, deal["link"])
             alerts_sent += 1
-            logger.info("Alert sent: %s->%s %.0f (-%0.f%%)",
+            logger.info("Alert: %s->%s %.0f (-%0.f%%)",
                         origin, dest, deal["price"], deal["discount_pct"])
 
     return len(flights), alerts_sent
 
 
-def send_heartbeat(tg_token: str, chat_id: str, routes_total: int,
-                   routes_with_data: int, flights_found: int,
-                   alerts_sent: int, errors: int):
-    now = datetime.now(timezone.utc).strftime("%H:%M UTC")
-    status = "✅" if routes_with_data > 0 else "⚠️"
-    msg = (
-        f"{status} *Flight Bot — Hourly Check*\n"
-        f"🕐 {now}\n\n"
-        f"📍 Routes checked: {routes_total}\n"
-        f"📡 Routes with data: {routes_with_data}/{routes_total}\n"
-        f"✈️ Flights found: {flights_found:,}\n"
-        f"🚨 Deals sent: {alerts_sent}\n"
-        f"❌ Errors: {errors}\n\n"
-        f"_{'Building baseline — alerts fire once enough history accumulates.' if alerts_sent == 0 and routes_with_data > 0 else 'All good!' if alerts_sent > 0 else 'API returned no data — check token.'}_"
-    )
-    notify.send(chat_id, msg, token=tg_token)
+def send_heartbeat(tg_token: str, chat_id: str,
+                   tp: dict, serp: dict):
+    now = datetime.now(timezone.utc).strftime("%d %b %H:%M UTC")
+    total_alerts = tp["alerts"] + serp.get("alerts", 0)
+    status = "🚨" if total_alerts > 0 else ("✅" if tp["routes_with_data"] > 0 else "⚠️")
+
+    lines = [
+        f"{status} *Flight Bot — Hourly Check*",
+        f"🕐 {now}",
+        "",
+        f"*Travelpayouts*",
+        f"  📡 {tp['routes_with_data']}/{tp['routes_total']} routes with data",
+        f"  ✈️ {tp['flights']:,} flights fetched",
+        f"  🚨 {tp['alerts']} deal(s) sent",
+    ]
+
+    if serp.get("ran"):
+        lines += [
+            "",
+            f"*Google Flights (SerpApi)*",
+            f"  📡 {serp['with_data']}/{serp['probed']} routes probed",
+            f"  ✈️ {serp['flights']:,} flights fetched",
+            f"  🚨 {serp['alerts']} deal(s) sent",
+            f"  💳 Budget left: {serp['budget_left']} calls",
+        ]
+    elif os.environ.get("SERPAPI_KEY"):
+        lines.append("\n_SerpApi: not scheduled today_")
+    else:
+        lines.append("\n_SerpApi: add SERPAPI\\_KEY secret to enable_")
+
+    if total_alerts == 0 and tp["routes_with_data"] > 0:
+        lines.append("\n_Building price baseline — deals fire once history accumulates_")
+    elif tp["routes_with_data"] == 0:
+        lines.append("\n_⚠️ No data from Travelpayouts — check TRAVELPAYOUTS\\_TOKEN secret_")
+
+    notify.send(chat_id, "\n".join(lines), token=tg_token)
 
 
 def main():
@@ -87,10 +108,9 @@ def main():
 
     logger.info("Checking %d routes with %d workers", len(routes), MAX_WORKERS)
 
-    total_flights = 0
-    total_alerts = 0
-    routes_with_data = 0
-    errors = 0
+    tp_data_routes: set[tuple[str, str]] = set()
+    tp_stats = {"routes_total": len(routes), "routes_with_data": 0,
+                "flights": 0, "alerts": 0, "errors": 0}
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
         futures = {pool.submit(check_route, api, route, tg_token): route for route in routes}
@@ -98,19 +118,23 @@ def main():
             route = futures[future]
             try:
                 flights, alerts = future.result()
-                total_flights += flights
-                total_alerts += alerts
+                tp_stats["flights"] += flights
+                tp_stats["alerts"] += alerts
                 if flights > 0:
-                    routes_with_data += 1
+                    tp_stats["routes_with_data"] += 1
+                    tp_data_routes.add((route["origin"].upper(), route["destination"].upper()))
             except Exception as e:
-                errors += 1
+                tp_stats["errors"] += 1
                 logger.error("Error on %s->%s: %s", route["origin"], route["destination"], e)
 
-    logger.info("Done. flights=%d alerts=%d routes_with_data=%d errors=%d",
-                total_flights, total_alerts, routes_with_data, errors)
+    # SerpApi probe — only runs on scheduled days, skips TP-covered routes
+    serp_stats = serpapi_probe.run_probe(tp_data_routes, tg_token, chat_id)
 
-    send_heartbeat(tg_token, chat_id, len(routes), routes_with_data,
-                   total_flights, total_alerts, errors)
+    logger.info("TP: flights=%d alerts=%d routes_with_data=%d errors=%d",
+                tp_stats["flights"], tp_stats["alerts"],
+                tp_stats["routes_with_data"], tp_stats["errors"])
+
+    send_heartbeat(tg_token, chat_id, tp_stats, serp_stats)
 
 
 if __name__ == "__main__":
