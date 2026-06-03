@@ -2,11 +2,13 @@ name: Flight Price Check
 
 on:
   schedule:
-    - cron: '0 * * * *'        # every hour
-  workflow_dispatch:            # manual "Run workflow" button
+    - cron: '0 * * * *'         # every hour (best-effort — GitHub throttles this)
+  repository_dispatch:           # reliable hourly trigger from an external pinger
+    types: [hourly-ping]
+  workflow_dispatch:             # manual "Run workflow" button
   push:
     branches: [main]
-    paths-ignore: ['data/**']   # ignore price-history commits to avoid loops
+    paths-ignore: ['data/**']    # ignore price-history commits to avoid loops
 
 # Serialize all runs so cron / manual / push triggers can't race each other
 # on the git push-back. cancel-in-progress: false = let the running job finish.
@@ -20,6 +22,8 @@ jobs:
     timeout-minutes: 10         # guard against a hung API call burning minutes
     permissions:
       contents: write           # needed to commit price history back to repo
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
     steps:
       - name: Checkout
@@ -53,11 +57,43 @@ jobs:
 
       - name: Commit updated price history
         run: |
-          set -euo pipefail
+          set -uo pipefail
           git config user.name  "flight-alert-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/prices.json data/alerts_sent.json data/serpapi_state.json || true
-          git diff --staged --quiet && echo "No changes to commit" || \
-            git commit -m "chore: price history update [skip ci]"
-          git pull --rebase origin main
-          git push
+
+          # Stage only the data files that exist (alerts_sent.json / serpapi_state.json
+          # may not exist until the first alert / first probe).
+          for f in data/prices.json data/alerts_sent.json data/serpapi_state.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: price history update [skip ci]"
+
+          # Push with retries. Price data is fully regenerated each run, so on a
+          # rebase conflict we deterministically keep OUR freshly-fetched version
+          # (-X theirs during rebase = the commits being replayed = ours).
+          # `git rebase --abort` at the top of each attempt clears any half-finished
+          # rebase so a single conflict can't cascade into the exit-128 we saw before.
+          for attempt in 1 2 3 4 5; do
+            git rebase --abort 2>/dev/null || true
+            # Bounded depth so the rebase merge-base is present even on a shallow
+            # clone, without fetching the whole history every run.
+            if ! git fetch --depth=50 origin main; then
+              echo "Fetch failed (attempt $attempt); retrying..."
+              sleep $((RANDOM % 5 + 3)); continue
+            fi
+            if git rebase -X theirs origin/main && git push origin HEAD:main; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying..."
+            sleep $((RANDOM % 5 + 3))
+          done
+
+          git rebase --abort 2>/dev/null || true
+          echo "::error::Failed to push price history after 5 attempts."
+          exit 1
