@@ -2,25 +2,31 @@ name: Flight Price Check
 
 on:
   schedule:
-    - cron: '0 * * * *'      # every hour
-  workflow_dispatch:           # allows manual "Run workflow" button in GitHub UI
+    - cron: '0 * * * *'        # every hour
+  workflow_dispatch:            # manual "Run workflow" button
   push:
     branches: [main]
-    paths-ignore: ['data/**']  # ignore price history commits to avoid loops
+    paths-ignore: ['data/**']   # ignore price-history commits to avoid loops
+
+# Serialize all runs so cron / manual / push triggers can't race each other
+# on the git push-back. cancel-in-progress: false = let the running job finish.
+concurrency:
+  group: flight-price-check
+  cancel-in-progress: false
 
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 10         # guard against a hung API call burning minutes
     permissions:
-      contents: write          # needed to commit price history back to repo
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+      contents: write           # needed to commit price history back to repo
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        # Shallow clone is enough for commit/push; avoids ever-growing fetch cost.
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,7 +37,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: pip-${{ hashFiles('requirements.txt') }}
+          key: pip-${{ runner.os }}-py3.12-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            pip-${{ runner.os }}-py3.12-
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -45,6 +53,7 @@ jobs:
 
       - name: Commit updated price history
         run: |
+          set -euo pipefail
           git config user.name  "flight-alert-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/prices.json data/alerts_sent.json data/serpapi_state.json || true
