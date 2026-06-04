@@ -1,4 +1,15 @@
 {
+  "DEL-VIE": [
+    {
+      "price": 65305.0,
+      "airline": "EY",
+      "departure_date": "2026-06-14",
+      "link": "",
+      "duration_hrs": 41.1,
+      "stops": 0,
+      "checked_at": "2026-06-04T11:37:03.981626"
+    }
+  ],
   "DEL-YVR": [
     {
       "price": 114077.0,
@@ -7,7 +18,18 @@
       "link": "",
       "duration_hrs": 59.2,
       "stops": 0,
-      "checked_at": "2026-06-04T11:01:01.691668"
+      "checked_at": "2026-06-04T11:37:04.017186"
+    }
+  ],
+  "DEL-SIN": [
+    {
+      "price": 51860.0,
+      "airline": "6E",
+      "departure_date": "2026-06-15",
+      "link": "",
+      "duration_hrs": 19.8,
+      "stops": 0,
+      "checked_at": "2026-06-04T11:37:04.092360"
     }
   ]
 }
