@@ -1,43 +1,35 @@
 {
   "serpapi": {
-    "monthly_budget": 240,
+    "monthly_budget": 250,
     "currency": "INR",
     "schedule": {
       "timezone": "Asia/Kolkata",
-      "probe_days": ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
-      "saturday": "every",
-      "probe_local_time": "01:00"
+      "probe_local_time": "04:30",
+      "probe_days": ["MON", "TUE", "WED", "THU", "FRI"],
+      "saturday": "alternate_even_week",
+      "sunday": "skip"
     },
     "trip": {
-      "type": "one_way",
-      "depart_offset_days": 60
+      "type": "round_trip",
+      "depart_offset_days": 90,
+      "return_offset_days": 7
+    },
+    "alert": {
+      "type": "baseline_drop",
+      "drop_pct": 15,
+      "min_history": 3
     }
   },
   "routes": [
-    {"from": "BOM", "to": "LHR", "priority": 1},
-    {"from": "BOM", "to": "JFK", "priority": 1},
-    {"from": "BOM", "to": "SFO", "priority": 1},
-    {"from": "BOM", "to": "YYZ", "priority": 1},
-    {"from": "BOM", "to": "SYD", "priority": 1},
-    {"from": "DEL", "to": "LHR", "priority": 1},
-    {"from": "DEL", "to": "JFK", "priority": 1},
-    {"from": "DEL", "to": "SFO", "priority": 1},
-    {"from": "DEL", "to": "YYZ", "priority": 1},
-    {"from": "DEL", "to": "SYD", "priority": 1},
-    {"from": "BLR", "to": "LHR", "priority": 1},
-    {"from": "BLR", "to": "JFK", "priority": 1},
-    {"from": "BLR", "to": "SFO", "priority": 1},
-    {"from": "HYD", "to": "LHR", "priority": 2},
-    {"from": "HYD", "to": "JFK", "priority": 2},
-    {"from": "HYD", "to": "SFO", "priority": 2},
-    {"from": "MAA", "to": "LHR", "priority": 2},
-    {"from": "MAA", "to": "SFO", "priority": 2},
-    {"from": "BOM", "to": "CDG", "priority": 2},
-    {"from": "DEL", "to": "CDG", "priority": 2},
-    {"from": "BOM", "to": "MEL", "priority": 2},
-    {"from": "DEL", "to": "MEL", "priority": 2},
-    {"from": "BOM", "to": "NRT", "priority": 3},
-    {"from": "DEL", "to": "NRT", "priority": 3},
-    {"from": "BOM", "to": "YVR", "priority": 3}
+    { "id": "BOM-HKT", "from": "BOM", "to": "HKT", "label": "Mumbai - Phuket",    "priority": 2 },
+    { "id": "BOM-VIE", "from": "BOM", "to": "VIE", "label": "Mumbai - Vienna",    "priority": 2 },
+    { "id": "BOM-BCN", "from": "BOM", "to": "BCN", "label": "Mumbai - Barcelona", "priority": 2 },
+    { "id": "BOM-AKL", "from": "BOM", "to": "AKL", "label": "Mumbai - Auckland",  "priority": 2 },
+    { "id": "BOM-TBS", "from": "BOM", "to": "TBS", "label": "Mumbai - Tbilisi",   "priority": 2 },
+    { "id": "BOM-ALA", "from": "BOM", "to": "ALA", "label": "Mumbai - Almaty",    "priority": 2 },
+    { "id": "BOM-IST", "from": "BOM", "to": "IST", "label": "Mumbai - Istanbul",  "priority": 2 },
+    { "id": "BOM-GYD", "from": "BOM", "to": "GYD", "label": "Mumbai - Baku",      "priority": 2 },
+    { "id": "BOM-HAN", "from": "BOM", "to": "HAN", "label": "Mumbai - Hanoi",     "priority": 2 },
+    { "id": "BOM-CMB", "from": "BOM", "to": "CMB", "label": "Mumbai - Colombo",   "priority": 2 }
   ]
 }

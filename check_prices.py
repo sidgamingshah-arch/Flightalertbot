@@ -120,7 +120,6 @@ def main():
 
     logger.info("Checking %d routes with %d workers", len(routes), MAX_WORKERS)
 
-    tp_data_routes: set[tuple[str, str]] = set()
     tp_stats = {"routes_total": len(routes), "routes_with_data": 0,
                 "flights": 0, "alerts": 0, "errors": 0}
 
@@ -134,13 +133,12 @@ def main():
                 tp_stats["alerts"] += alerts
                 if flights > 0:
                     tp_stats["routes_with_data"] += 1
-                    tp_data_routes.add((route["origin"].upper(), route["destination"].upper()))
             except Exception as e:
                 tp_stats["errors"] += 1
                 logger.error("Error on %s->%s: %s", route["origin"], route["destination"], e)
 
-    # SerpApi probe — only runs on scheduled days, skips TP-covered routes
-    serp_stats = serpapi_probe.run_probe(tp_data_routes, tg_token, chat_id)
+    # SerpApi probe — round-trip prices for the watchlist, once per scheduled day
+    serp_stats = serpapi_probe.run_probe(tg_token, chat_id)
 
     logger.info("TP: flights=%d alerts=%d routes_with_data=%d errors=%d",
                 tp_stats["flights"], tp_stats["alerts"],

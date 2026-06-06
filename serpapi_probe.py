@@ -60,31 +60,26 @@ def _ensure_month(state: dict, now_local: datetime) -> dict:
 
 # ---------- schedule gate ----------
 
+def _weekend_rule(now_local: datetime, rule: str) -> bool:
+    if rule == "alternate_even_week":
+        return now_local.isocalendar().week % 2 == 0
+    return rule == "every"
+
+
 def _is_probe_day(now_local: datetime, schedule: dict) -> bool:
     day = _DAY_NAMES[now_local.weekday()]
     if day in schedule.get("probe_days", []):
         return True
     if day == "SAT":
-        rule = schedule.get("saturday", "skip")
-        if rule == "alternate_even_week":
-            return now_local.isocalendar().week % 2 == 0
-        return rule == "every"
+        return _weekend_rule(now_local, schedule.get("saturday", "skip"))
+    if day == "SUN":
+        return _weekend_rule(now_local, schedule.get("sunday", "skip"))
     return False
 
 
 def _past_probe_time(now_local: datetime, schedule: dict) -> bool:
     hh, mm = map(int, schedule.get("probe_local_time", "00:00").split(":"))
     return now_local >= now_local.replace(hour=hh, minute=mm, second=0, microsecond=0)
-
-
-def _eligible(now_local: datetime, schedule: dict, state: dict) -> bool:
-    if not _is_probe_day(now_local, schedule):
-        return False
-    if not _past_probe_time(now_local, schedule):
-        return False
-    if state.get("last_probe_date") == now_local.date().isoformat():
-        return False  # already probed today
-    return True
 
 
 # ---------- SerpApi query + normalisation ----------
@@ -161,14 +156,14 @@ def _normalise(data: dict, origin: str, dest: str, currency: str) -> list[dict]:
 
 # ---------- entry point ----------
 
-def run_probe(tp_data_routes: set[tuple[str, str]], tg_token: str,
-              chat_id: str, now_utc: datetime | None = None) -> dict:
-    """Probe watchlist routes via SerpApi.
+def run_probe(tg_token: str, chat_id: str, now_utc: datetime | None = None) -> dict:
+    """Probe the watchlist routes via SerpApi (Google Flights).
 
-    tp_data_routes: {(ORIGIN, DEST)} that Travelpayouts already priced — skipped
-    to avoid wasting quota on routes already covered for free.
+    Probes every watchlist route on a probe day — SerpApi returns round-trip fares,
+    a different product from Travelpayouts' one-way data, so its prices are stored
+    under a separate baseline (see rt_dest) and never mixed with TP one-way prices.
 
-    Returns stats dict for the heartbeat message.
+    Returns a stats dict for the heartbeat message.
     """
     stats = {"ran": False, "status": "unknown", "probe_time": "", "probed": 0,
              "with_data": 0, "flights": 0, "alerts": 0, "errors": 0, "budget_left": None}
@@ -212,19 +207,23 @@ def run_probe(tp_data_routes: set[tuple[str, str]], tg_token: str,
 
     trip = cfg.get("trip", {})
     currency = cfg.get("currency", "INR")
+    alert = cfg.get("alert", {})
+    drop_pct = alert.get("drop_pct", 15)
+    min_history = alert.get("min_history", 3)
+    # "baseline_drop" = pure %-below-baseline rule; z-score is unreliable at low
+    # history counts, so disable it unless a different alert type is configured.
+    use_zscore = alert.get("type", "baseline_drop") != "baseline_drop"
     stats["ran"] = True
     stats["status"] = "ran"
 
-    # Priority 1 routes first — protects them when budget runs low
+    # Priority order first — protects top routes if the budget runs low mid-run.
     routes = sorted(wl.get("routes", []), key=lambda r: r.get("priority", 2))
 
     for r in routes:
         origin, dest = r["from"].upper(), r["to"].upper()
-        if (origin, dest) in tp_data_routes:
-            logger.info("Skipping %s->%s — already priced by Travelpayouts", origin, dest)
-            continue
         if state["calls_used"] >= budget:
             logger.info("SerpApi monthly budget (%d) reached", budget)
+            stats["status"] = "budget_reached"
             break
 
         stats["probed"] += 1
@@ -253,11 +252,18 @@ def run_probe(tp_data_routes: set[tuple[str, str]], tg_token: str,
         stats["with_data"] += 1
         stats["flights"] += len(flights)
 
-        store.record_prices(origin, dest, flights)
-        for deal in detector.find_deals(origin, dest, flights):
+        # Namespace round-trip data so it never mixes with TP one-way baselines.
+        # Display still uses the clean dest code (e.g. "HKT"), storage uses "HKT#RT".
+        rt_dest = f"{dest}#RT" if trip.get("type") == "round_trip" else dest
+
+        store.record_prices(origin, rt_dest, flights)
+        deals = detector.find_deals(origin, rt_dest, flights,
+                                    min_history=min_history, drop_pct=drop_pct,
+                                    use_zscore=use_zscore)
+        for deal in deals:
             msg = notify.deal_message(origin, dest, deal, currency=currency, source="Google Flights")
             if notify.send(chat_id, msg, token=tg_token):
-                store.mark_alerted(origin, dest, deal["link"])
+                store.mark_alerted(origin, rt_dest, deal["link"])
                 stats["alerts"] += 1
                 logger.info("SerpApi alert: %s->%s %.0f %s", origin, dest, deal["price"], currency)
 
