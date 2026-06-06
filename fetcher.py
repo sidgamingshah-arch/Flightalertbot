@@ -1,12 +1,15 @@
 import logging
 import requests
 from datetime import datetime, timedelta
-from dateutil.relativedelta import relativedelta
 
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://api.travelpayouts.com/v1/prices/cheap"
 BOOK_BASE = "https://www.aviasales.com"
+
+# Departure horizons (days from today) to sample. Each maps to the calendar month
+# it falls in; TP's "cheap" endpoint returns the cheapest fares for that month.
+DEFAULT_HORIZONS_DAYS = [60, 90, 120, 150, 180]
 
 
 class TravelpayoutsAPI:
@@ -19,15 +22,22 @@ class TravelpayoutsAPI:
         origin: str,
         destination: str,
         currency: str = "USD",
-        lookahead_months: int = 3,
+        horizons_days: list[int] | None = None,
     ) -> list[dict]:
-        results = []
+        horizons_days = horizons_days or DEFAULT_HORIZONS_DAYS
         today = datetime.utcnow()
 
-        for offset in range(lookahead_months + 1):
-            month = (today + relativedelta(months=offset)).strftime("%Y-%m")
-            batch = self._fetch_month(origin, destination, month, currency)
-            results.extend(batch)
+        # Map each horizon to its calendar month, de-duplicating months so we don't
+        # query the same month twice when two horizons land in it.
+        months = []
+        for d in horizons_days:
+            m = (today + timedelta(days=d)).strftime("%Y-%m")
+            if m not in months:
+                months.append(m)
+
+        results = []
+        for month in months:
+            results.extend(self._fetch_month(origin, destination, month, currency))
 
         # Deduplicate by booking link
         seen = set()
@@ -38,7 +48,8 @@ class TravelpayoutsAPI:
                 unique.append(r)
 
         if unique:
-            logger.info("Fetched %d fares for %s->%s", len(unique), origin, destination)
+            logger.info("Fetched %d fares for %s->%s across %d horizons",
+                        len(unique), origin, destination, len(months))
         else:
             logger.warning("NO DATA returned for %s->%s (currency=%s)", origin, destination, currency)
 
