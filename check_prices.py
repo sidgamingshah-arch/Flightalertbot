@@ -79,12 +79,24 @@ def send_heartbeat(tg_token: str, chat_id: str,
             f"  📡 {serp['with_data']}/{serp['probed']} routes probed",
             f"  ✈️ {serp['flights']:,} flights fetched",
             f"  🚨 {serp['alerts']} deal(s) sent",
-            f"  💳 Budget left: {serp['budget_left']} calls",
+            f"  💳 Budget left: {serp['budget_left']} calls this month",
         ]
-    elif os.environ.get("SERPAPI_KEY"):
-        lines.append("\n_SerpApi: not scheduled today_")
     else:
-        lines.append("\n_SerpApi: add SERPAPI\\_KEY secret to enable_")
+        # Probe only runs once/day — report clearly WHY it didn't run this hour,
+        # so the ~23 non-probe runs/day don't look like a failure.
+        s = serp.get("status", "")
+        left = serp.get("budget_left")
+        ptime = serp.get("probe_time", "01:00")
+        if s == "already_today":
+            lines.append(f"\n_SerpApi: ✅ ran earlier today · {left} of monthly budget left_")
+        elif s == "before_time":
+            lines.append(f"\n_SerpApi: ⏳ today's probe scheduled for {ptime} IST_")
+        elif s == "not_probe_day":
+            lines.append("\n_SerpApi: 💤 not a probe day (Mon–Fri + alternate Sat)_")
+        elif s == "no_key":
+            lines.append("\n_SerpApi: ➕ add SERPAPI\\_KEY secret to enable_")
+        else:
+            lines.append("\n_SerpApi: idle_")
 
     if total_alerts == 0 and tp["routes_with_data"] > 0:
         lines.append("\n_Building price baseline — deals fire once history accumulates_")

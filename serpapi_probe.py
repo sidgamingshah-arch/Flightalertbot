@@ -170,16 +170,18 @@ def run_probe(tp_data_routes: set[tuple[str, str]], tg_token: str,
 
     Returns stats dict for the heartbeat message.
     """
-    stats = {"ran": False, "probed": 0, "with_data": 0, "flights": 0,
-             "alerts": 0, "errors": 0, "budget_left": None}
+    stats = {"ran": False, "status": "unknown", "probe_time": "", "probed": 0,
+             "with_data": 0, "flights": 0, "alerts": 0, "errors": 0, "budget_left": None}
 
     api_key = os.environ.get("SERPAPI_KEY")
     if not api_key:
+        stats["status"] = "no_key"
         logger.info("SERPAPI_KEY not set — skipping SerpApi probe")
         return stats
 
     wl = _load_watchlist()
     if not wl:
+        stats["status"] = "no_watchlist"
         return stats
 
     cfg = wl.get("serpapi", {})
@@ -189,14 +191,29 @@ def run_probe(tp_data_routes: set[tuple[str, str]], tg_token: str,
     now_local = now_utc.astimezone(tz)
 
     state = _ensure_month(_load_state(), now_local)
-    if not _eligible(now_local, schedule, state):
-        logger.info("SerpApi probe not scheduled for %s", now_local.strftime("%a %H:%M"))
+    budget = cfg.get("monthly_budget", 90)
+    stats["probe_time"] = schedule.get("probe_local_time", "00:00")
+    stats["budget_left"] = budget - state.get("calls_used", 0)
+
+    # Explicit eligibility checks, each recording a reason for the heartbeat.
+    if not _is_probe_day(now_local, schedule):
+        stats["status"] = "not_probe_day"
+        logger.info("SerpApi: not a probe day (%s)", now_local.strftime("%a"))
+        return stats
+    if state.get("last_probe_date") == now_local.date().isoformat():
+        stats["status"] = "already_today"
+        logger.info("SerpApi: already probed today (%d calls used)", state.get("calls_used", 0))
+        return stats
+    if not _past_probe_time(now_local, schedule):
+        stats["status"] = "before_time"
+        logger.info("SerpApi: before probe time %s (now %s)",
+                    stats["probe_time"], now_local.strftime("%H:%M"))
         return stats
 
-    budget = cfg.get("monthly_budget", 90)
     trip = cfg.get("trip", {})
     currency = cfg.get("currency", "INR")
     stats["ran"] = True
+    stats["status"] = "ran"
 
     # Priority 1 routes first — protects them when budget runs low
     routes = sorted(wl.get("routes", []), key=lambda r: r.get("priority", 2))
