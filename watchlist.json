@@ -1,11 +1,11 @@
 {
   "serpapi": {
-    "monthly_budget": 90,
+    "monthly_budget": 240,
     "currency": "INR",
     "schedule": {
       "timezone": "Asia/Kolkata",
-      "probe_days": ["MON", "TUE", "WED", "THU", "FRI"],
-      "saturday": "alternate_even_week",
+      "probe_days": ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
+      "saturday": "every",
       "probe_local_time": "01:00"
     },
     "trip": {

@@ -46,7 +46,7 @@ def check_route(api: TravelpayoutsAPI, route: dict, tg_token: str) -> tuple[int,
     alerts_sent = 0
 
     for deal in deals:
-        msg = notify.deal_message(origin, dest, deal, currency=currency)
+        msg = notify.deal_message(origin, dest, deal, currency=currency, source="Travelpayouts")
         if notify.send(chat_id, msg, token=tg_token):
             store.mark_alerted(origin, dest, deal["link"])
             alerts_sent += 1

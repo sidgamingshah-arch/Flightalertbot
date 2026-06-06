@@ -231,6 +231,18 @@ def run_probe(tp_data_routes: set[tuple[str, str]], tg_token: str,
         state["calls_used"] += 1
         try:
             flights = _query_serpapi(api_key, origin, dest, trip, currency, now_local)
+        except requests.HTTPError as e:
+            code = e.response.status_code if e.response is not None else None
+            if code == 429:
+                # Real SerpApi quota hit — stop cleanly regardless of our soft budget.
+                stats["status"] = "quota_exhausted"
+                stats["probed"] -= 1  # this call was rejected, not a real probe
+                state["calls_used"] -= 1
+                logger.warning("SerpApi quota exhausted (HTTP 429) — stopping probe")
+                break
+            stats["errors"] += 1
+            logger.error("SerpApi HTTP %s %s->%s: %s", code, origin, dest, e)
+            continue
         except Exception as e:
             stats["errors"] += 1
             logger.error("SerpApi error %s->%s: %s", origin, dest, e)
@@ -243,7 +255,7 @@ def run_probe(tp_data_routes: set[tuple[str, str]], tg_token: str,
 
         store.record_prices(origin, dest, flights)
         for deal in detector.find_deals(origin, dest, flights):
-            msg = notify.deal_message(origin, dest, deal, currency=currency)
+            msg = notify.deal_message(origin, dest, deal, currency=currency, source="Google Flights")
             if notify.send(chat_id, msg, token=tg_token):
                 store.mark_alerted(origin, dest, deal["link"])
                 stats["alerts"] += 1

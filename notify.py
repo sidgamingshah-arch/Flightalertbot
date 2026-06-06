@@ -22,6 +22,14 @@ def _symbol(currency: str) -> str:
     return CURRENCY_SYMBOLS.get(currency.upper(), currency + " ")
 
 
+def _infer_source(link: str) -> str:
+    if "google.com/travel/flights" in link:
+        return "Google Flights (SerpApi)"
+    if "aviasales" in link:
+        return "Aviasales (Travelpayouts)"
+    return "Travelpayouts"
+
+
 def send(chat_id: str, text: str, token: str | None = None) -> bool:
     token = token or os.environ["TELEGRAM_BOT_TOKEN"]
     try:
@@ -37,14 +45,17 @@ def send(chat_id: str, text: str, token: str | None = None) -> bool:
         return False
 
 
-def deal_message(origin: str, destination: str, deal: dict, currency: str = "INR") -> str:
+def deal_message(origin: str, destination: str, deal: dict,
+                 currency: str = "INR", source: str = "") -> str:
     sym = _symbol(currency)
     stops_label = "Non-stop" if deal["stops"] == 0 else f"{deal['stops']} stop(s)"
+    src = source or _infer_source(deal.get("link", ""))
     return (
         f"🚨 *FLIGHT DEAL — {origin} → {destination}*\n\n"
         f"💰 *{sym}{deal['price']:,.0f}* _(30d avg: {sym}{deal['avg_price']:,.0f})_\n"
         f"📉 *{deal['discount_pct']:.0f}% below average* (Z-score: {deal['z_score']})\n"
         f"📅 Departs: {deal['departure_date']}\n"
-        f"🏷️ {deal['airline']} · {stops_label} · {deal['duration_hrs']}h\n\n"
+        f"🏷️ {deal['airline']} · {stops_label} · {deal['duration_hrs']}h\n"
+        f"🔎 via {src}\n\n"
         f"[Book Now]({deal['link']})"
     )
