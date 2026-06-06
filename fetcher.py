@@ -9,7 +9,9 @@ BOOK_BASE = "https://www.aviasales.com"
 
 # Departure horizons (days from today) to sample. Each maps to the calendar month
 # it falls in; TP's "cheap" endpoint returns the cheapest fares for that month.
-DEFAULT_HORIZONS_DAYS = [60, 90, 120, 150, 180]
+# Includes near-term (0, 30) for last-minute / flash fares plus 60-180d for trips
+# planned further out.
+DEFAULT_HORIZONS_DAYS = [0, 30, 60, 90, 120, 150, 180]
 
 
 class TravelpayoutsAPI:
