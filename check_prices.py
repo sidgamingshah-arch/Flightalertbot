@@ -37,23 +37,30 @@ def check_route(api: TravelpayoutsAPI, route: dict, tg_token: str) -> tuple[int,
     chat_id = str(route["telegram_chat_id"])
     currency = route.get("currency", "USD")
 
-    flights = api.search(origin, dest, currency=currency)
-    if not flights:
-        return 0, 0
-
-    store.record_prices(origin, dest, flights)
-    deals = detector.find_deals(origin, dest, flights)
+    fares = api.search(origin, dest, currency=currency)
+    total_flights = 0
     alerts_sent = 0
 
-    for deal in deals:
-        msg = notify.deal_message(origin, dest, deal, currency=currency, source="Travelpayouts")
-        if notify.send(chat_id, msg, token=tg_token):
-            store.mark_alerted(origin, dest, deal["link"])
-            alerts_sent += 1
-            logger.info("Alert: %s->%s %.0f (-%0.f%%)",
-                        origin, dest, deal["price"], deal["discount_pct"])
+    # One-way and round-trip are different products (round-trip ~2x), so each keeps
+    # its own baseline: one-way under "BOM-LHR", round-trip under "BOM-LHR#TP-RT".
+    groups = [
+        (fares.get("oneway", []),    dest,             "Travelpayouts (one-way)"),
+        (fares.get("roundtrip", []), f"{dest}#TP-RT",  "Travelpayouts (round-trip)"),
+    ]
+    for flights, key_dest, label in groups:
+        if not flights:
+            continue
+        total_flights += len(flights)
+        store.record_prices(origin, key_dest, flights)
+        for deal in detector.find_deals(origin, key_dest, flights):
+            msg = notify.deal_message(origin, dest, deal, currency=currency, source=label)
+            if notify.send(chat_id, msg, token=tg_token):
+                store.mark_alerted(origin, key_dest, deal["link"])
+                alerts_sent += 1
+                logger.info("Alert: %s->%s [%s] %.0f (-%0.f%%)",
+                            origin, dest, label, deal["price"], deal["discount_pct"])
 
-    return len(flights), alerts_sent
+    return total_flights, alerts_sent
 
 
 def send_heartbeat(tg_token: str, chat_id: str,

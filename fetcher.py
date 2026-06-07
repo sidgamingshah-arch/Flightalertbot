@@ -25,7 +25,12 @@ class TravelpayoutsAPI:
         destination: str,
         currency: str = "USD",
         horizons_days: list[int] | None = None,
-    ) -> list[dict]:
+    ) -> dict[str, list[dict]]:
+        """Fetch both one-way and round-trip fares across the horizon months.
+
+        Returns {"oneway": [...], "roundtrip": [...]}. Round-trip queries add a
+        return_date in the same month (a return leg within the departure month).
+        """
         horizons_days = horizons_days or DEFAULT_HORIZONS_DAYS
         today = datetime.utcnow()
 
@@ -37,28 +42,35 @@ class TravelpayoutsAPI:
             if m not in months:
                 months.append(m)
 
-        results = []
+        oneway, roundtrip = [], []
         for month in months:
-            results.extend(self._fetch_month(origin, destination, month, currency))
+            oneway.extend(self._fetch_month(origin, destination, month, currency))
+            roundtrip.extend(self._fetch_month(origin, destination, month, currency, return_date=month))
 
-        # Deduplicate by booking link
-        seen = set()
-        unique = []
-        for r in results:
-            if r["link"] not in seen:
-                seen.add(r["link"])
-                unique.append(r)
+        oneway = self._dedupe(oneway)
+        roundtrip = self._dedupe(roundtrip)
 
-        if unique:
-            logger.info("Fetched %d fares for %s->%s across %d horizons",
-                        len(unique), origin, destination, len(months))
+        if oneway or roundtrip:
+            logger.info("Fetched %s->%s: %d one-way + %d round-trip across %d months",
+                        origin, destination, len(oneway), len(roundtrip), len(months))
         else:
             logger.warning("NO DATA returned for %s->%s (currency=%s)", origin, destination, currency)
 
+        return {"oneway": oneway, "roundtrip": roundtrip}
+
+    @staticmethod
+    def _dedupe(flights: list[dict]) -> list[dict]:
+        seen = set()
+        unique = []
+        for f in flights:
+            if f["link"] not in seen:
+                seen.add(f["link"])
+                unique.append(f)
         return unique
 
     def _fetch_month(
-        self, origin: str, destination: str, depart_date: str, currency: str
+        self, origin: str, destination: str, depart_date: str, currency: str,
+        return_date: str | None = None,
     ) -> list[dict]:
         params = {
             "origin": origin,
@@ -70,6 +82,8 @@ class TravelpayoutsAPI:
             "show_to_affiliates": "true",
             "sorting": "price",
         }
+        if return_date:
+            params["return_date"] = return_date  # presence of this = round-trip
         try:
             resp = self.session.get(BASE_URL, params=params, timeout=15)
             resp.raise_for_status()
