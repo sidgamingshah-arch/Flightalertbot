@@ -123,15 +123,6 @@
   ],
   "BOM-FCO": [
     {
-      "price": 46686.0,
-      "airline": "ET",
-      "departure_date": "2026-10-19",
-      "link": "",
-      "duration_hrs": 30.0,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:01.439744"
-    },
-    {
       "price": 46679.0,
       "airline": "ET",
       "departure_date": "2026-10-19",
@@ -1921,18 +1912,18 @@
       "duration_hrs": 29.3,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:13.729198"
+    },
+    {
+      "price": 50523.0,
+      "airline": "ET",
+      "departure_date": "2026-07-31",
+      "link": "",
+      "duration_hrs": 29.3,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.956698"
     }
   ],
   "BOM-LHR": [
-    {
-      "price": 67530.0,
-      "airline": "GF",
-      "departure_date": "2026-07-26",
-      "link": "",
-      "duration_hrs": 28.3,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:01.651066"
-    },
     {
       "price": 67530.0,
       "airline": "GF",
@@ -3723,18 +3714,18 @@
       "duration_hrs": 28.3,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:13.945739"
+    },
+    {
+      "price": 63840.0,
+      "airline": "GF",
+      "departure_date": "2026-08-01",
+      "link": "",
+      "duration_hrs": 28.3,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.148625"
     }
   ],
   "BOM-CDG": [
-    {
-      "price": 72377.0,
-      "airline": "EY",
-      "departure_date": "2026-08-20",
-      "link": "",
-      "duration_hrs": 41.3,
-      "stops": 0,
-      "checked_at": "2026-07-23T22:00:58.620844"
-    },
     {
       "price": 72377.0,
       "airline": "EY",
@@ -5525,18 +5516,18 @@
       "duration_hrs": 29.9,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:13.401187"
+    },
+    {
+      "price": 62970.0,
+      "airline": "EY",
+      "departure_date": "2026-08-13",
+      "link": "",
+      "duration_hrs": 29.9,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:07.808053"
     }
   ],
   "BOM-IST": [
-    {
-      "price": 42420.0,
-      "airline": "EK",
-      "departure_date": "2026-07-25",
-      "link": "",
-      "duration_hrs": 26.8,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:02.183916"
-    },
     {
       "price": 42420.0,
       "airline": "EK",
@@ -7327,18 +7318,18 @@
       "duration_hrs": 34.8,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:14.036999"
+    },
+    {
+      "price": 38085.0,
+      "airline": "J2",
+      "departure_date": "2026-08-07",
+      "link": "",
+      "duration_hrs": 34.8,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.025191"
     }
   ],
   "BOM-SIN": [
-    {
-      "price": 25814.0,
-      "airline": "6E",
-      "departure_date": "2026-07-31",
-      "link": "",
-      "duration_hrs": 11.3,
-      "stops": 0,
-      "checked_at": "2026-07-24T16:50:02.188032"
-    },
     {
       "price": 25814.0,
       "airline": "6E",
@@ -9129,6 +9120,15 @@
       "duration_hrs": 11.3,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:16.984035"
+    },
+    {
+      "price": 24159.0,
+      "airline": "6E",
+      "departure_date": "2026-08-20",
+      "link": "",
+      "duration_hrs": 11.3,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:11.799413"
     }
   ],
   "BOM-YYZ": [
@@ -12454,6 +12454,15 @@
       "duration_hrs": 46.2,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:17.571265"
+    },
+    {
+      "price": 45891.0,
+      "airline": "VJ",
+      "departure_date": "2026-08-03",
+      "link": "",
+      "duration_hrs": 46.2,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:12.042527"
     }
   ],
   "BOM-CGK": [
@@ -14266,15 +14275,6 @@
       "link": "",
       "duration_hrs": 34.7,
       "stops": 0,
-      "checked_at": "2026-07-18T08:01:09.709513"
-    },
-    {
-      "price": 30372.0,
-      "airline": "SG",
-      "departure_date": "2026-07-31",
-      "link": "",
-      "duration_hrs": 34.7,
-      "stops": 0,
       "checked_at": "2026-07-18T09:01:16.519942"
     },
     {
@@ -16058,18 +16058,18 @@
       "duration_hrs": 16.4,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:16.870256"
+    },
+    {
+      "price": 27366.0,
+      "airline": "VJ",
+      "departure_date": "2026-08-27",
+      "link": "",
+      "duration_hrs": 16.4,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:11.895345"
     }
   ],
   "BOM-BKK": [
-    {
-      "price": 30392.0,
-      "airline": "UL",
-      "departure_date": "2026-07-31",
-      "link": "",
-      "duration_hrs": 12.3,
-      "stops": 0,
-      "checked_at": "2026-07-24T07:01:02.266905"
-    },
     {
       "price": 30392.0,
       "airline": "UL",
@@ -17860,6 +17860,15 @@
       "duration_hrs": 8.7,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:17.205127"
+    },
+    {
+      "price": 22608.0,
+      "airline": "VZ",
+      "departure_date": "2026-08-28",
+      "link": "",
+      "duration_hrs": 8.7,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:11.695925"
     }
   ],
   "BOM-HKT": [
@@ -18816,6 +18825,15 @@
       "duration_hrs": 22.2,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:17.438259"
+    },
+    {
+      "price": 39297.0,
+      "airline": "QP",
+      "departure_date": "2026-08-01",
+      "link": "",
+      "duration_hrs": 22.2,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:12.140682"
     }
   ],
   "BOM-NRT": [
@@ -20363,15 +20381,6 @@
     }
   ],
   "BOM-FRA": [
-    {
-      "price": 51568.0,
-      "airline": "EY",
-      "departure_date": "2026-07-27",
-      "link": "",
-      "duration_hrs": 41.8,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:02.669330"
-    },
     {
       "price": 51568.0,
       "airline": "EY",
@@ -22162,6 +22171,15 @@
       "duration_hrs": 33.1,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:13.837310"
+    },
+    {
+      "price": 58034.0,
+      "airline": "WY",
+      "departure_date": "2026-07-31",
+      "link": "",
+      "duration_hrs": 33.1,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:07.597336"
     }
   ],
   "BOM-JFK": [
@@ -25776,15 +25794,6 @@
       "link": "",
       "duration_hrs": 48.9,
       "stops": 0,
-      "checked_at": "2026-07-19T13:01:08.777259"
-    },
-    {
-      "price": 95369.0,
-      "airline": "BA",
-      "departure_date": "2026-10-21",
-      "link": "",
-      "duration_hrs": 48.9,
-      "stops": 0,
       "checked_at": "2026-07-19T13:24:33.565649"
     },
     {
@@ -27568,18 +27577,18 @@
       "duration_hrs": 61.0,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:16.456731"
+    },
+    {
+      "price": 96248.0,
+      "airline": "BA",
+      "departure_date": "2026-09-15",
+      "link": "",
+      "duration_hrs": 61.0,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:11.321022"
     }
   ],
   "BOM-KUL": [
-    {
-      "price": 32625.0,
-      "airline": "6E",
-      "departure_date": "2026-07-31",
-      "link": "",
-      "duration_hrs": 15.4,
-      "stops": 0,
-      "checked_at": "2026-07-22T13:01:09.172230"
-    },
     {
       "price": 32625.0,
       "airline": "6E",
@@ -29370,18 +29379,18 @@
       "duration_hrs": 43.2,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:17.310986"
+    },
+    {
+      "price": 29904.0,
+      "airline": "AI",
+      "departure_date": "2026-08-26",
+      "link": "",
+      "duration_hrs": 43.2,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:12.617700"
     }
   ],
   "BOM-HKG": [
-    {
-      "price": 31638.0,
-      "airline": "IX",
-      "departure_date": "2026-07-31",
-      "link": "",
-      "duration_hrs": 23.6,
-      "stops": 0,
-      "checked_at": "2026-07-19T03:01:11.863036"
-    },
     {
       "price": 31638.0,
       "airline": "IX",
@@ -31172,6 +31181,15 @@
       "duration_hrs": 23.0,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:17.096675"
+    },
+    {
+      "price": 37564.0,
+      "airline": "IX",
+      "departure_date": "2026-08-05",
+      "link": "",
+      "duration_hrs": 23.0,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:12.479599"
     }
   ],
   "MAA-CMB": [
@@ -31598,15 +31616,6 @@
     }
   ],
   "BOM-FRA#TP-RT": [
-    {
-      "price": 53658.0,
-      "airline": "QP",
-      "departure_date": "2026-08-01",
-      "link": "",
-      "duration_hrs": 28.9,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:03.833794"
-    },
     {
       "price": 53658.0,
       "airline": "QP",
@@ -33397,18 +33406,18 @@
       "duration_hrs": 25.0,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:14.515628"
+    },
+    {
+      "price": 53774.0,
+      "airline": "RJ",
+      "departure_date": "2026-09-05",
+      "link": "",
+      "duration_hrs": 25.0,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:07.712079"
     }
   ],
   "BOM-FCO#TP-RT": [
-    {
-      "price": 46686.0,
-      "airline": "ET",
-      "departure_date": "2026-10-19",
-      "link": "",
-      "duration_hrs": 30.0,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:01.995762"
-    },
     {
       "price": 46679.0,
       "airline": "ET",
@@ -35199,6 +35208,15 @@
       "duration_hrs": 29.3,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:14.409106"
+    },
+    {
+      "price": 50523.0,
+      "airline": "ET",
+      "departure_date": "2026-08-01",
+      "link": "",
+      "duration_hrs": 29.3,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:09.180446"
     }
   ],
   "BOM-JFK#TP-RT": [
@@ -37011,15 +37029,6 @@
       "link": "",
       "duration_hrs": 28.3,
       "stops": 0,
-      "checked_at": "2026-07-24T18:01:02.875268"
-    },
-    {
-      "price": 67530.0,
-      "airline": "GF",
-      "departure_date": "2026-07-26",
-      "link": "",
-      "duration_hrs": 28.3,
-      "stops": 0,
       "checked_at": "2026-07-24T18:20:55.417458"
     },
     {
@@ -38803,18 +38812,18 @@
       "duration_hrs": 28.3,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:14.601868"
+    },
+    {
+      "price": 63840.0,
+      "airline": "GF",
+      "departure_date": "2026-08-01",
+      "link": "",
+      "duration_hrs": 28.3,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.359968"
     }
   ],
   "BOM-CDG#TP-RT": [
-    {
-      "price": 72377.0,
-      "airline": "EY",
-      "departure_date": "2026-08-20",
-      "link": "",
-      "duration_hrs": 41.3,
-      "stops": 0,
-      "checked_at": "2026-07-23T22:00:59.804499"
-    },
     {
       "price": 72377.0,
       "airline": "EY",
@@ -40605,18 +40614,18 @@
       "duration_hrs": 29.9,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:14.246404"
+    },
+    {
+      "price": 62970.0,
+      "airline": "EY",
+      "departure_date": "2026-08-13",
+      "link": "",
+      "duration_hrs": 29.9,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:07.933056"
     }
   ],
   "BOM-IST#TP-RT": [
-    {
-      "price": 42420.0,
-      "airline": "EK",
-      "departure_date": "2026-07-25",
-      "link": "",
-      "duration_hrs": 26.8,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:03.361933"
-    },
     {
       "price": 42420.0,
       "airline": "EK",
@@ -42407,18 +42416,18 @@
       "duration_hrs": 34.8,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:14.690176"
+    },
+    {
+      "price": 38085.0,
+      "airline": "J2",
+      "departure_date": "2026-08-07",
+      "link": "",
+      "duration_hrs": 34.8,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.239200"
     }
   ],
   "BOM-SIN#TP-RT": [
-    {
-      "price": 22779.0,
-      "airline": "6E",
-      "departure_date": "2026-08-10",
-      "link": "",
-      "duration_hrs": 11.3,
-      "stops": 0,
-      "checked_at": "2026-07-23T06:01:01.022387"
-    },
     {
       "price": 22779.0,
       "airline": "6E",
@@ -44209,18 +44218,18 @@
       "duration_hrs": 11.3,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:17.950298"
+    },
+    {
+      "price": 24159.0,
+      "airline": "6E",
+      "departure_date": "2026-08-20",
+      "link": "",
+      "duration_hrs": 11.3,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:12.375427"
     }
   ],
   "BOM-SFO#TP-RT": [
-    {
-      "price": 109546.0,
-      "airline": "EY",
-      "departure_date": "2026-07-09",
-      "link": "",
-      "duration_hrs": 78.0,
-      "stops": 0,
-      "checked_at": "2026-07-03T03:36:55.218248"
-    },
     {
       "price": 109546.0,
       "airline": "EY",
@@ -46011,18 +46020,18 @@
       "duration_hrs": 61.0,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:16.748553"
+    },
+    {
+      "price": 96248.0,
+      "airline": "BA",
+      "departure_date": "2026-09-15",
+      "link": "",
+      "duration_hrs": 61.0,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:11.439664"
     }
   ],
   "BOM-SGN#TP-RT": [
-    {
-      "price": 23978.0,
-      "airline": "VJ",
-      "departure_date": "2026-07-18",
-      "link": "",
-      "duration_hrs": 31.7,
-      "stops": 0,
-      "checked_at": "2026-07-01T20:48:25.197269"
-    },
     {
       "price": 23978.0,
       "airline": "VJ",
@@ -47813,6 +47822,15 @@
       "duration_hrs": 16.4,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:17.814210"
+    },
+    {
+      "price": 27366.0,
+      "airline": "VJ",
+      "departure_date": "2026-08-27",
+      "link": "",
+      "duration_hrs": 16.4,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:12.724383"
     }
   ],
   "BOM-MNL#TP-RT": [
@@ -49084,18 +49102,18 @@
       "duration_hrs": 46.2,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:18.422297"
+    },
+    {
+      "price": 45891.0,
+      "airline": "VJ",
+      "departure_date": "2026-08-03",
+      "link": "",
+      "duration_hrs": 46.2,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:12.890588"
     }
   ],
   "BOM-BKK#TP-RT": [
-    {
-      "price": 30206.0,
-      "airline": "VN",
-      "departure_date": "2026-07-19",
-      "link": "",
-      "duration_hrs": 21.7,
-      "stops": 0,
-      "checked_at": "2026-07-19T07:01:13.929613"
-    },
     {
       "price": 30206.0,
       "airline": "VN",
@@ -50886,6 +50904,15 @@
       "duration_hrs": 8.7,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:18.174632"
+    },
+    {
+      "price": 25626.0,
+      "airline": "VZ",
+      "departure_date": "2026-08-08",
+      "link": "",
+      "duration_hrs": 8.7,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:12.272977"
     }
   ],
   "BOM-HKG#TP-RT": [
@@ -52589,6 +52616,15 @@
       "duration_hrs": 23.0,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:18.060216"
+    },
+    {
+      "price": 37564.0,
+      "airline": "IX",
+      "departure_date": "2026-08-05",
+      "link": "",
+      "duration_hrs": 23.0,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:13.151379"
     }
   ],
   "BOM-CGK#TP-RT": [
@@ -54401,15 +54437,6 @@
       "link": "",
       "duration_hrs": 17.0,
       "stops": 0,
-      "checked_at": "2026-07-06T15:01:34.969703"
-    },
-    {
-      "price": 33972.0,
-      "airline": "6E",
-      "departure_date": "2026-07-09",
-      "link": "",
-      "duration_hrs": 17.0,
-      "stops": 0,
       "checked_at": "2026-07-06T16:01:35.279741"
     },
     {
@@ -56193,6 +56220,15 @@
       "duration_hrs": 36.2,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:18.288385"
+    },
+    {
+      "price": 38019.0,
+      "airline": "OD",
+      "departure_date": "2026-08-17",
+      "link": "",
+      "duration_hrs": 36.2,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:13.301565"
     }
   ],
   "BOM-YYZ#TP-RT": [
@@ -60122,15 +60158,6 @@
       "link": "",
       "duration_hrs": 19.0,
       "stops": 0,
-      "checked_at": "2026-06-30T16:01:18.370669"
-    },
-    {
-      "price": 29868.0,
-      "airline": "VZ",
-      "departure_date": "2026-07-14",
-      "link": "",
-      "duration_hrs": 19.0,
-      "stops": 0,
       "checked_at": "2026-07-01T00:01:22.440609"
     },
     {
@@ -60798,18 +60825,18 @@
       "duration_hrs": 22.2,
       "stops": 0,
       "checked_at": "2026-07-30T15:01:16.391078"
+    },
+    {
+      "price": 39297.0,
+      "airline": "QP",
+      "departure_date": "2026-08-01",
+      "link": "",
+      "duration_hrs": 22.2,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:12.992519"
     }
   ],
   "BOM-AMS": [
-    {
-      "price": 55156.0,
-      "airline": "IX",
-      "departure_date": "2026-10-12",
-      "link": "",
-      "duration_hrs": 92.8,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:02.390800"
-    },
     {
       "price": 55156.0,
       "airline": "IX",
@@ -62600,6 +62627,15 @@
       "duration_hrs": 37.3,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:13.602050"
+    },
+    {
+      "price": 56999.0,
+      "airline": "EY",
+      "departure_date": "2026-09-20",
+      "link": "",
+      "duration_hrs": 37.3,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:09.288699"
     }
   ],
   "BOM-AMS#TP-RT": [
@@ -64412,15 +64448,6 @@
       "link": "",
       "duration_hrs": 31.5,
       "stops": 0,
-      "checked_at": "2026-07-21T13:00:58.875401"
-    },
-    {
-      "price": 71841.0,
-      "airline": "TK",
-      "departure_date": "2026-07-24",
-      "link": "",
-      "duration_hrs": 31.5,
-      "stops": 0,
       "checked_at": "2026-07-21T14:00:18.502595"
     },
     {
@@ -66204,6 +66231,15 @@
       "duration_hrs": 65.8,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:13.094981"
+    },
+    {
+      "price": 70516.0,
+      "airline": "RJ",
+      "departure_date": "2026-08-29",
+      "link": "",
+      "duration_hrs": 65.8,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.759772"
     }
   ],
   "BOM-LIS#TP-RT": [
@@ -68016,15 +68052,6 @@
       "link": "",
       "duration_hrs": 56.4,
       "stops": 0,
-      "checked_at": "2026-07-24T18:01:01.881897"
-    },
-    {
-      "price": 56677.0,
-      "airline": "AI",
-      "departure_date": "2026-08-24",
-      "link": "",
-      "duration_hrs": 56.4,
-      "stops": 0,
       "checked_at": "2026-07-24T18:20:54.932803"
     },
     {
@@ -69808,18 +69835,18 @@
       "duration_hrs": 44.5,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:13.212004"
+    },
+    {
+      "price": 53176.0,
+      "airline": "6E",
+      "departure_date": "2026-08-07",
+      "link": "",
+      "duration_hrs": 44.5,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.551317"
     }
   ],
   "BOM-BCN#TP-RT": [
-    {
-      "price": 50544.0,
-      "airline": "QP",
-      "departure_date": "2026-09-18",
-      "link": "",
-      "duration_hrs": 34.8,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:03.148619"
-    },
     {
       "price": 50544.0,
       "airline": "QP",
@@ -71610,6 +71637,15 @@
       "duration_hrs": 44.5,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:14.142385"
+    },
+    {
+      "price": 53176.0,
+      "airline": "6E",
+      "departure_date": "2026-08-07",
+      "link": "",
+      "duration_hrs": 44.5,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.670495"
     }
   ],
   "BOM-MAD": [
@@ -73422,15 +73458,6 @@
       "link": "",
       "duration_hrs": 29.3,
       "stops": 0,
-      "checked_at": "2026-07-24T18:01:01.767876"
-    },
-    {
-      "price": 49588.0,
-      "airline": "EY",
-      "departure_date": "2026-11-30",
-      "link": "",
-      "duration_hrs": 29.3,
-      "stops": 0,
       "checked_at": "2026-07-24T18:20:54.365159"
     },
     {
@@ -75214,18 +75241,18 @@
       "duration_hrs": 29.3,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:13.306876"
+    },
+    {
+      "price": 49588.0,
+      "airline": "EY",
+      "departure_date": "2026-11-30",
+      "link": "",
+      "duration_hrs": 29.3,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.446189"
     }
   ],
   "BOM-ZRH": [
-    {
-      "price": 51260.0,
-      "airline": "EY",
-      "departure_date": "2026-08-01",
-      "link": "",
-      "duration_hrs": 42.1,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:02.481936"
-    },
     {
       "price": 51252.0,
       "airline": "EY",
@@ -77016,6 +77043,15 @@
       "duration_hrs": 42.1,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:12.997219"
+    },
+    {
+      "price": 51283.0,
+      "airline": "EY",
+      "departure_date": "2026-08-01",
+      "link": "",
+      "duration_hrs": 42.1,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:08.871196"
     }
   ],
   "BOM-ATH": [
@@ -108016,15 +108052,6 @@
   ],
   "BOM-ZRH#TP-RT": [
     {
-      "price": 51260.0,
-      "airline": "EY",
-      "departure_date": "2026-08-01",
-      "link": "",
-      "duration_hrs": 42.1,
-      "stops": 0,
-      "checked_at": "2026-07-24T18:01:03.644889"
-    },
-    {
       "price": 51252.0,
       "airline": "EY",
       "departure_date": "2026-08-01",
@@ -109814,6 +109841,15 @@
       "duration_hrs": 42.1,
       "stops": 0,
       "checked_at": "2026-07-30T17:38:13.512092"
+    },
+    {
+      "price": 51283.0,
+      "airline": "EY",
+      "departure_date": "2026-08-01",
+      "link": "",
+      "duration_hrs": 42.1,
+      "stops": 0,
+      "checked_at": "2026-07-30T18:01:09.094005"
     }
   ],
   "BOM-PEK#TP-RT": [
