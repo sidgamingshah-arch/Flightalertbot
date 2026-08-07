@@ -107130,15 +107130,6 @@
   ],
   "TRV-MLE": [
     {
-      "price": 39934.0,
-      "airline": "6E",
-      "departure_date": "2026-08-07",
-      "link": "",
-      "duration_hrs": 7.4,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:02:20.304325"
-    },
-    {
       "price": 42201.0,
       "airline": "6E",
       "departure_date": "2026-09-20",
@@ -107155,6 +107146,15 @@
       "duration_hrs": 3.5,
       "stops": 0,
       "checked_at": "2026-07-19T16:04:05.681654"
+    },
+    {
+      "price": 27924.0,
+      "airline": "UL",
+      "departure_date": "2027-01-14",
+      "link": "",
+      "duration_hrs": 16.5,
+      "stops": 0,
+      "checked_at": "2026-08-07T19:02:00.014694"
     }
   ],
   "ATQ-AMS": [
@@ -107169,15 +107169,6 @@
     }
   ],
   "TRV-MLE#TP-RT": [
-    {
-      "price": 39934.0,
-      "airline": "6E",
-      "departure_date": "2026-08-07",
-      "link": "",
-      "duration_hrs": 7.4,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:02:20.633077"
-    },
     {
       "price": 42201.0,
       "airline": "6E",
@@ -107195,6 +107186,15 @@
       "duration_hrs": 3.5,
       "stops": 0,
       "checked_at": "2026-07-19T16:04:05.804260"
+    },
+    {
+      "price": 28017.0,
+      "airline": "UL",
+      "departure_date": "2026-12-21",
+      "link": "",
+      "duration_hrs": 21.8,
+      "stops": 0,
+      "checked_at": "2026-08-07T19:02:00.134504"
     }
   ],
   "ATQ-AMS#TP-RT": [
@@ -109343,6 +109343,15 @@
       "duration_hrs": 2.0,
       "stops": 0,
       "checked_at": "2026-07-19T16:04:05.907099"
+    },
+    {
+      "price": 28646.0,
+      "airline": "UL",
+      "departure_date": "2026-12-01",
+      "link": "",
+      "duration_hrs": 1.8,
+      "stops": 0,
+      "checked_at": "2026-08-07T19:02:00.228090"
     }
   ],
   "TRV-CMB#TP-RT": [
@@ -109363,6 +109372,15 @@
       "duration_hrs": 11.8,
       "stops": 0,
       "checked_at": "2026-07-19T16:04:06.052625"
+    },
+    {
+      "price": 28646.0,
+      "airline": "UL",
+      "departure_date": "2026-12-01",
+      "link": "",
+      "duration_hrs": 1.8,
+      "stops": 0,
+      "checked_at": "2026-08-07T19:02:00.351449"
     }
   ],
   "JAI-IST": [
@@ -111791,6 +111809,15 @@
       "duration_hrs": 36.7,
       "stops": 0,
       "checked_at": "2026-07-31T06:48:50.731777"
+    },
+    {
+      "price": 34174.0,
+      "airline": "EY",
+      "departure_date": "2026-08-17",
+      "link": "",
+      "duration_hrs": 7.1,
+      "stops": 0,
+      "checked_at": "2026-08-07T19:02:05.521483"
     }
   ],
   "BOM-CPT": [
@@ -111988,6 +112015,17 @@
       "duration_hrs": 39.0,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:02.708181"
+    }
+  ],
+  "JAI-AUH": [
+    {
+      "price": 34174.0,
+      "airline": "EY",
+      "departure_date": "2026-08-17",
+      "link": "",
+      "duration_hrs": 7.1,
+      "stops": 0,
+      "checked_at": "2026-08-07T19:02:05.394215"
     }
   ]
 }
