@@ -43,15 +43,6 @@
   ],
   "DEL-YVR": [
     {
-      "price": 119658.0,
-      "airline": "KE",
-      "departure_date": "2026-07-20",
-      "link": "",
-      "duration_hrs": 73.3,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:42.893605"
-    },
-    {
       "price": 103911.0,
       "airline": "AC",
       "departure_date": "2026-09-18",
@@ -59,18 +50,18 @@
       "duration_hrs": 71.6,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:04.082043"
+    },
+    {
+      "price": 99258.0,
+      "airline": "AC",
+      "departure_date": "2026-12-10",
+      "link": "",
+      "duration_hrs": 49.6,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:57.494467"
     }
   ],
   "DEL-SIN": [
-    {
-      "price": 34058.0,
-      "airline": "VN",
-      "departure_date": "2026-07-17",
-      "link": "",
-      "duration_hrs": 24.2,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.114306"
-    },
     {
       "price": 29305.0,
       "airline": "D7",
@@ -79,18 +70,18 @@
       "duration_hrs": 14.2,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:03.962632"
+    },
+    {
+      "price": 29715.0,
+      "airline": "AI",
+      "departure_date": "2026-10-01",
+      "link": "",
+      "duration_hrs": 22.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:57.822090"
     }
   ],
   "DEL-KUL": [
-    {
-      "price": 23187.0,
-      "airline": "D7",
-      "departure_date": "2026-07-13",
-      "link": "",
-      "duration_hrs": 11.4,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.324097"
-    },
     {
       "price": 34835.0,
       "airline": "VN",
@@ -99,18 +90,18 @@
       "duration_hrs": 22.0,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:04.320387"
+    },
+    {
+      "price": 28984.0,
+      "airline": "OD",
+      "departure_date": "2026-10-16",
+      "link": "",
+      "duration_hrs": 10.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:58.393093"
     }
   ],
   "DEL-BKK": [
-    {
-      "price": 29749.0,
-      "airline": "AI",
-      "departure_date": "2026-07-15",
-      "link": "",
-      "duration_hrs": 8.9,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.549155"
-    },
     {
       "price": 27313.0,
       "airline": "AI",
@@ -119,6 +110,15 @@
       "duration_hrs": 14.2,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:04.550241"
+    },
+    {
+      "price": 26441.0,
+      "airline": "AI",
+      "departure_date": "2026-10-14",
+      "link": "",
+      "duration_hrs": 19.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:58.582570"
     }
   ],
   "BOM-FCO": [
@@ -106089,15 +106089,6 @@
   ],
   "DEL-HKG": [
     {
-      "price": 31022.0,
-      "airline": "VN",
-      "departure_date": "2026-08-06",
-      "link": "",
-      "duration_hrs": 25.4,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.024584"
-    },
-    {
       "price": 31334.0,
       "airline": "AI",
       "departure_date": "2026-07-27",
@@ -106105,18 +106096,18 @@
       "duration_hrs": 11.6,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:04.758669"
+    },
+    {
+      "price": 37754.0,
+      "airline": "6E",
+      "departure_date": "2026-10-01",
+      "link": "",
+      "duration_hrs": 11.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:58.205497"
     }
   ],
   "DEL-YVR#TP-RT": [
-    {
-      "price": 119658.0,
-      "airline": "KE",
-      "departure_date": "2026-07-20",
-      "link": "",
-      "duration_hrs": 73.3,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.210329"
-    },
     {
       "price": 103911.0,
       "airline": "AC",
@@ -106125,18 +106116,18 @@
       "duration_hrs": 71.6,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:04.907153"
+    },
+    {
+      "price": 102087.0,
+      "airline": "WY",
+      "departure_date": "2026-10-20",
+      "link": "",
+      "duration_hrs": 93.3,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:57.620799"
     }
   ],
   "DEL-HKG#TP-RT": [
-    {
-      "price": 31022.0,
-      "airline": "VN",
-      "departure_date": "2026-08-06",
-      "link": "",
-      "duration_hrs": 25.4,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.453976"
-    },
     {
       "price": 30822.0,
       "airline": "AI",
@@ -106145,18 +106136,18 @@
       "duration_hrs": 11.6,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:05.482015"
+    },
+    {
+      "price": 37754.0,
+      "airline": "6E",
+      "departure_date": "2026-10-01",
+      "link": "",
+      "duration_hrs": 11.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:58.765814"
     }
   ],
   "DEL-CGK": [
-    {
-      "price": 29154.0,
-      "airline": "VN",
-      "departure_date": "2026-09-01",
-      "link": "",
-      "duration_hrs": 34.0,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.638002"
-    },
     {
       "price": 49053.0,
       "airline": "D7",
@@ -106165,18 +106156,18 @@
       "duration_hrs": 31.1,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:05.079526"
+    },
+    {
+      "price": 28456.0,
+      "airline": "VN",
+      "departure_date": "2026-09-08",
+      "link": "",
+      "duration_hrs": 34.0,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:58.302361"
     }
   ],
   "DEL-SIN#TP-RT": [
-    {
-      "price": 34058.0,
-      "airline": "VN",
-      "departure_date": "2026-07-17",
-      "link": "",
-      "duration_hrs": 24.2,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.740275"
-    },
     {
       "price": 29305.0,
       "airline": "D7",
@@ -106185,18 +106176,18 @@
       "duration_hrs": 14.2,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:04.447462"
+    },
+    {
+      "price": 29715.0,
+      "airline": "AI",
+      "departure_date": "2026-10-01",
+      "link": "",
+      "duration_hrs": 22.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:57.942319"
     }
   ],
   "DEL-MNL": [
-    {
-      "price": 31698.0,
-      "airline": "VN",
-      "departure_date": "2026-07-20",
-      "link": "",
-      "duration_hrs": 45.5,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.826688"
-    },
     {
       "price": 45349.0,
       "airline": "AI",
@@ -106205,18 +106196,18 @@
       "duration_hrs": 74.2,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:04.653416"
+    },
+    {
+      "price": 29403.0,
+      "airline": "VN",
+      "departure_date": "2026-09-22",
+      "link": "",
+      "duration_hrs": 44.2,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:58.485232"
     }
   ],
   "DEL-KUL#TP-RT": [
-    {
-      "price": 23187.0,
-      "airline": "D7",
-      "departure_date": "2026-07-13",
-      "link": "",
-      "duration_hrs": 11.4,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:43.975499"
-    },
     {
       "price": 31186.0,
       "airline": "D7",
@@ -106225,29 +106216,29 @@
       "duration_hrs": 11.4,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:05.211550"
+    },
+    {
+      "price": 29517.0,
+      "airline": "OD",
+      "departure_date": "2026-09-10",
+      "link": "",
+      "duration_hrs": 11.0,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:58.946615"
     }
   ],
   "DEL-SGN": [
     {
-      "price": 33802.0,
-      "airline": "K6",
-      "departure_date": "2026-07-18",
+      "price": 30778.0,
+      "airline": "D7",
+      "departure_date": "2026-10-09",
       "link": "",
-      "duration_hrs": 49.2,
+      "duration_hrs": 24.4,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:44.113860"
+      "checked_at": "2026-08-11T18:01:59.220213"
     }
   ],
   "DEL-BKK#TP-RT": [
-    {
-      "price": 29749.0,
-      "airline": "AI",
-      "departure_date": "2026-07-15",
-      "link": "",
-      "duration_hrs": 8.9,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:44.219804"
-    },
     {
       "price": 22063.0,
       "airline": "AI",
@@ -106256,18 +106247,18 @@
       "duration_hrs": 21.2,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:05.346341"
+    },
+    {
+      "price": 26441.0,
+      "airline": "AI",
+      "departure_date": "2026-10-14",
+      "link": "",
+      "duration_hrs": 19.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:59.309669"
     }
   ],
   "DEL-CGK#TP-RT": [
-    {
-      "price": 29154.0,
-      "airline": "VN",
-      "departure_date": "2026-09-01",
-      "link": "",
-      "duration_hrs": 34.0,
-      "stops": 0,
-      "checked_at": "2026-07-07T12:01:44.314374"
-    },
     {
       "price": 49053.0,
       "airline": "D7",
@@ -106276,94 +106267,103 @@
       "duration_hrs": 31.1,
       "stops": 0,
       "checked_at": "2026-07-26T10:03:05.645978"
+    },
+    {
+      "price": 28456.0,
+      "airline": "VN",
+      "departure_date": "2026-09-08",
+      "link": "",
+      "duration_hrs": 34.0,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:01:58.858885"
     }
   ],
   "DEL-HKT": [
     {
-      "price": 33264.0,
-      "airline": "IX",
-      "departure_date": "2026-07-23",
+      "price": 33155.0,
+      "airline": "AI",
+      "departure_date": "2026-09-07",
       "link": "",
-      "duration_hrs": 21.9,
+      "duration_hrs": 33.0,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:44.430226"
+      "checked_at": "2026-08-11T18:01:59.510344"
     }
   ],
   "DEL-NRT": [
     {
-      "price": 56115.0,
-      "airline": "CX",
-      "departure_date": "2026-07-09",
+      "price": 55394.0,
+      "airline": "VJ",
+      "departure_date": "2026-09-14",
       "link": "",
-      "duration_hrs": 44.3,
+      "duration_hrs": 62.2,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:44.524521"
+      "checked_at": "2026-08-11T18:01:59.036893"
     }
   ],
   "DEL-ICN": [
     {
-      "price": 43370.0,
-      "airline": "VN",
-      "departure_date": "2026-09-02",
+      "price": 35455.0,
+      "airline": "D7",
+      "departure_date": "2026-08-21",
       "link": "",
-      "duration_hrs": 28.5,
+      "duration_hrs": 45.5,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:44.628418"
+      "checked_at": "2026-08-11T18:01:59.901297"
     }
   ],
   "DEL-MNL#TP-RT": [
     {
-      "price": 31698.0,
+      "price": 34837.0,
       "airline": "VN",
-      "departure_date": "2026-07-20",
+      "departure_date": "2026-09-14",
       "link": "",
-      "duration_hrs": 45.5,
+      "duration_hrs": 46.8,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:44.733777"
+      "checked_at": "2026-08-11T18:01:59.128950"
     }
   ],
   "DEL-PVG": [
     {
-      "price": 41300.0,
-      "airline": "CA",
-      "departure_date": "2026-07-17",
+      "price": 42148.0,
+      "airline": "VN",
+      "departure_date": "2026-08-25",
       "link": "",
-      "duration_hrs": 27.3,
+      "duration_hrs": 41.1,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:44.836163"
+      "checked_at": "2026-08-11T18:01:59.641613"
     }
   ],
   "DEL-PEK": [
     {
-      "price": 40632.0,
+      "price": 43520.0,
       "airline": "CA",
-      "departure_date": "2026-07-17",
+      "departure_date": "2026-08-16",
       "link": "",
       "duration_hrs": 13.9,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:44.924178"
+      "checked_at": "2026-08-11T18:01:59.731495"
     }
   ],
   "DEL-TPE": [
     {
-      "price": 54538.0,
-      "airline": "MU",
-      "departure_date": "2026-12-26",
+      "price": 44534.0,
+      "airline": "AI",
+      "departure_date": "2026-08-25",
       "link": "",
-      "duration_hrs": 44.8,
+      "duration_hrs": 55.3,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:45.028093"
+      "checked_at": "2026-08-11T18:01:59.401520"
     }
   ],
   "DEL-SGN#TP-RT": [
     {
-      "price": 33802.0,
-      "airline": "K6",
-      "departure_date": "2026-07-18",
+      "price": 30778.0,
+      "airline": "D7",
+      "departure_date": "2026-10-09",
       "link": "",
-      "duration_hrs": 49.2,
+      "duration_hrs": 24.4,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:45.168046"
+      "checked_at": "2026-08-11T18:02:00.158820"
     }
   ],
   "DEL-DXB": [
@@ -106375,105 +106375,114 @@
       "duration_hrs": 20.4,
       "stops": 0,
       "checked_at": "2026-08-07T09:02:56.369431"
+    },
+    {
+      "price": 26703.0,
+      "airline": "GF",
+      "departure_date": "2026-09-16",
+      "link": "",
+      "duration_hrs": 25.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:00.871348"
     }
   ],
   "DEL-DOH": [
     {
-      "price": 31874.0,
-      "airline": "EY",
-      "departure_date": "2026-07-15",
+      "price": 43648.0,
+      "airline": "G9",
+      "departure_date": "2026-08-20",
       "link": "",
-      "duration_hrs": 20.6,
+      "duration_hrs": 17.3,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:45.360040"
+      "checked_at": "2026-08-11T18:02:01.203804"
     }
   ],
   "DEL-HKT#TP-RT": [
     {
-      "price": 33264.0,
-      "airline": "IX",
-      "departure_date": "2026-07-23",
+      "price": 34101.0,
+      "airline": "AI",
+      "departure_date": "2026-08-20",
       "link": "",
-      "duration_hrs": 21.9,
+      "duration_hrs": 46.2,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:45.501716"
+      "checked_at": "2026-08-11T18:02:00.361262"
     }
   ],
   "DEL-NRT#TP-RT": [
     {
-      "price": 57774.0,
+      "price": 56848.0,
       "airline": "CX",
-      "departure_date": "2026-07-25",
+      "departure_date": "2026-08-12",
       "link": "",
-      "duration_hrs": 52.8,
+      "duration_hrs": 49.1,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:45.590698"
+      "checked_at": "2026-08-11T18:02:00.065927"
     }
   ],
   "DEL-ICN#TP-RT": [
     {
-      "price": 43370.0,
-      "airline": "VN",
-      "departure_date": "2026-09-02",
+      "price": 35455.0,
+      "airline": "D7",
+      "departure_date": "2026-08-21",
       "link": "",
-      "duration_hrs": 28.5,
+      "duration_hrs": 45.5,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:45.678819"
+      "checked_at": "2026-08-11T18:02:00.677423"
     }
   ],
   "DEL-AUH": [
     {
-      "price": 34778.0,
-      "airline": "EY",
-      "departure_date": "2026-07-15",
+      "price": 31769.0,
+      "airline": "IX",
+      "departure_date": "2026-08-14",
       "link": "",
-      "duration_hrs": 7.8,
+      "duration_hrs": 10.2,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:45.784038"
+      "checked_at": "2026-08-11T18:02:01.669198"
     }
   ],
   "DEL-MCT": [
     {
-      "price": 29650.0,
-      "airline": "WY",
-      "departure_date": "2026-07-12",
+      "price": 30998.0,
+      "airline": "IX",
+      "departure_date": "2026-08-16",
       "link": "",
-      "duration_hrs": 6.6,
+      "duration_hrs": 30.0,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:45.887528"
+      "checked_at": "2026-08-11T18:02:02.132280"
     }
   ],
   "DEL-PVG#TP-RT": [
     {
-      "price": 41300.0,
-      "airline": "CA",
-      "departure_date": "2026-07-17",
+      "price": 42148.0,
+      "airline": "VN",
+      "departure_date": "2026-08-25",
       "link": "",
-      "duration_hrs": 27.3,
+      "duration_hrs": 41.1,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:45.992520"
+      "checked_at": "2026-08-11T18:02:00.451874"
     }
   ],
   "DEL-PEK#TP-RT": [
     {
-      "price": 40632.0,
+      "price": 43543.0,
       "airline": "CA",
-      "departure_date": "2026-07-17",
+      "departure_date": "2026-08-16",
       "link": "",
       "duration_hrs": 13.9,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:46.080671"
+      "checked_at": "2026-08-11T18:02:00.546131"
     }
   ],
   "DEL-TPE#TP-RT": [
     {
-      "price": 54538.0,
-      "airline": "MU",
-      "departure_date": "2026-12-26",
+      "price": 44534.0,
+      "airline": "AI",
+      "departure_date": "2026-08-25",
       "link": "",
-      "duration_hrs": 44.8,
+      "duration_hrs": 55.3,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:46.168498"
+      "checked_at": "2026-08-11T18:02:00.267541"
     }
   ],
   "DEL-RUH": [
@@ -106485,6 +106494,15 @@
       "duration_hrs": 9.2,
       "stops": 0,
       "checked_at": "2026-08-07T09:02:57.433381"
+    },
+    {
+      "price": 44352.0,
+      "airline": "SV",
+      "departure_date": "2026-08-31",
+      "link": "",
+      "duration_hrs": 27.1,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:02.621407"
     }
   ],
   "DEL-DXB#TP-RT": [
@@ -106496,28 +106514,37 @@
       "duration_hrs": 20.4,
       "stops": 0,
       "checked_at": "2026-08-07T09:02:56.481239"
+    },
+    {
+      "price": 26703.0,
+      "airline": "GF",
+      "departure_date": "2026-09-16",
+      "link": "",
+      "duration_hrs": 25.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:00.983413"
     }
   ],
   "DEL-KWI": [
     {
-      "price": 35261.0,
-      "airline": "KU",
-      "departure_date": "2026-08-27",
+      "price": 43053.0,
+      "airline": "6E",
+      "departure_date": "2026-08-17",
       "link": "",
-      "duration_hrs": 8.9,
+      "duration_hrs": 40.2,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:46.504261"
+      "checked_at": "2026-08-11T18:02:02.368716"
     }
   ],
   "DEL-DOH#TP-RT": [
     {
-      "price": 31874.0,
-      "airline": "EY",
-      "departure_date": "2026-07-15",
+      "price": 43648.0,
+      "airline": "G9",
+      "departure_date": "2026-08-20",
       "link": "",
-      "duration_hrs": 20.6,
+      "duration_hrs": 17.3,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:46.605493"
+      "checked_at": "2026-08-11T18:02:01.315343"
     }
   ],
   "DEL-AUH#TP-RT": [
@@ -106529,17 +106556,26 @@
       "duration_hrs": 42.3,
       "stops": 0,
       "checked_at": "2026-08-07T09:02:56.957055"
+    },
+    {
+      "price": 31769.0,
+      "airline": "IX",
+      "departure_date": "2026-08-14",
+      "link": "",
+      "duration_hrs": 10.2,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:01.784142"
     }
   ],
   "DEL-MCT#TP-RT": [
     {
-      "price": 29650.0,
-      "airline": "WY",
-      "departure_date": "2026-07-12",
+      "price": 30998.0,
+      "airline": "IX",
+      "departure_date": "2026-08-16",
       "link": "",
-      "duration_hrs": 6.6,
+      "duration_hrs": 30.0,
       "stops": 0,
-      "checked_at": "2026-07-07T12:01:46.880831"
+      "checked_at": "2026-08-11T18:02:02.261388"
     }
   ],
   "DEL-RUH#TP-RT": [
@@ -106593,6 +106629,15 @@
       "duration_hrs": 7.2,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:00.755994"
+    },
+    {
+      "price": 33487.0,
+      "airline": "AI",
+      "departure_date": "2026-08-20",
+      "link": "",
+      "duration_hrs": 6.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:03.497144"
     }
   ],
   "DEL-CMB#TP-RT": [
@@ -106613,6 +106658,15 @@
       "duration_hrs": 7.2,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:02.016186"
+    },
+    {
+      "price": 33487.0,
+      "airline": "AI",
+      "departure_date": "2026-08-20",
+      "link": "",
+      "duration_hrs": 6.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:04.130791"
     }
   ],
   "DEL-MLE": [
@@ -106633,6 +106687,15 @@
       "duration_hrs": 39.7,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:00.091503"
+    },
+    {
+      "price": 37875.0,
+      "airline": "UL",
+      "departure_date": "2026-08-25",
+      "link": "",
+      "duration_hrs": 33.4,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:03.373534"
     }
   ],
   "DEL-KTM": [
@@ -106653,6 +106716,15 @@
       "duration_hrs": 3.6,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:00.511999"
+    },
+    {
+      "price": 15639.0,
+      "airline": "AI",
+      "departure_date": "2026-08-29",
+      "link": "",
+      "duration_hrs": 3.9,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:03.745575"
     }
   ],
   "DEL-MEL": [
@@ -106673,6 +106745,15 @@
       "duration_hrs": 49.4,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:00.611957"
+    },
+    {
+      "price": 66559.0,
+      "airline": "AI",
+      "departure_date": "2026-08-25",
+      "link": "",
+      "duration_hrs": 49.4,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:03.246391"
     }
   ],
   "DEL-DAC": [
@@ -106684,6 +106765,15 @@
       "duration_hrs": 19.2,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:00.396396"
+    },
+    {
+      "price": 19259.0,
+      "airline": "6E",
+      "departure_date": "2026-08-31",
+      "link": "",
+      "duration_hrs": 5.1,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:03.141807"
     }
   ],
   "DEL-SYD": [
@@ -106704,6 +106794,15 @@
       "duration_hrs": 38.2,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:00.302244"
+    },
+    {
+      "price": 73523.0,
+      "airline": "MU",
+      "departure_date": "2026-09-07",
+      "link": "",
+      "duration_hrs": 50.8,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:03.010523"
     }
   ],
   "DEL-GRU": [
@@ -106804,6 +106903,15 @@
       "duration_hrs": 39.7,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:00.201918"
+    },
+    {
+      "price": 37875.0,
+      "airline": "UL",
+      "departure_date": "2026-08-25",
+      "link": "",
+      "duration_hrs": 33.4,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:03.997795"
     }
   ],
   "BLR-AMS": [
@@ -106844,6 +106952,15 @@
       "duration_hrs": 3.8,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:01.425359"
+    },
+    {
+      "price": 17564.0,
+      "airline": "6E",
+      "departure_date": "2026-08-19",
+      "link": "",
+      "duration_hrs": 3.4,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:04.285745"
     }
   ],
   "DEL-MEL#TP-RT": [
@@ -106864,6 +106981,15 @@
       "duration_hrs": 49.4,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:01.539439"
+    },
+    {
+      "price": 66559.0,
+      "airline": "AI",
+      "departure_date": "2026-08-25",
+      "link": "",
+      "duration_hrs": 49.4,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:03.873010"
     }
   ],
   "DEL-DAC#TP-RT": [
@@ -106915,6 +107041,15 @@
       "duration_hrs": 38.2,
       "stops": 0,
       "checked_at": "2026-08-07T09:03:01.000682"
+    },
+    {
+      "price": 73523.0,
+      "airline": "MU",
+      "departure_date": "2026-09-07",
+      "link": "",
+      "duration_hrs": 50.8,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:03.622616"
     }
   ],
   "DEL-EZE#TP-RT": [
@@ -114228,6 +114363,15 @@
       "duration_hrs": 44.1,
       "stops": 0,
       "checked_at": "2026-08-07T09:02:58.787745"
+    },
+    {
+      "price": 67908.0,
+      "airline": "ET",
+      "departure_date": "2026-08-21",
+      "link": "",
+      "duration_hrs": 27.6,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:02.497149"
     }
   ],
   "DEL-CPT": [
@@ -114338,6 +114482,28 @@
       "duration_hrs": 27.8,
       "stops": 0,
       "checked_at": "2026-08-11T02:01:01.176923"
+    }
+  ],
+  "DEL-KWI#TP-RT": [
+    {
+      "price": 43075.0,
+      "airline": "6E",
+      "departure_date": "2026-08-17",
+      "link": "",
+      "duration_hrs": 40.2,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:02.753223"
+    }
+  ],
+  "DEL-JNB#TP-RT": [
+    {
+      "price": 67908.0,
+      "airline": "ET",
+      "departure_date": "2026-08-21",
+      "link": "",
+      "duration_hrs": 27.6,
+      "stops": 0,
+      "checked_at": "2026-08-11T18:02:02.886289"
     }
   ]
 }
