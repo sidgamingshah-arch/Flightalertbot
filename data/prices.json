@@ -111652,6 +111652,15 @@
       "duration_hrs": 35.3,
       "stops": 0,
       "checked_at": "2026-08-11T02:01:00.959685"
+    },
+    {
+      "price": 49019.0,
+      "airline": "6E",
+      "departure_date": "2026-09-02",
+      "link": "",
+      "duration_hrs": 37.2,
+      "stops": 0,
+      "checked_at": "2026-08-25T03:01:56.702531"
     }
   ],
   "BBI-DOH": [
@@ -111945,6 +111954,28 @@
       "duration_hrs": 35.2,
       "stops": 0,
       "checked_at": "2026-08-18T03:01:11.353299"
+    }
+  ],
+  "BBI-NRT": [
+    {
+      "price": 88861.0,
+      "airline": "AI",
+      "departure_date": "2026-10-16",
+      "link": "",
+      "duration_hrs": 61.0,
+      "stops": 0,
+      "checked_at": "2026-08-25T03:01:56.602931"
+    }
+  ],
+  "BBI-NRT#TP-RT": [
+    {
+      "price": 88861.0,
+      "airline": "AI",
+      "departure_date": "2026-10-16",
+      "link": "",
+      "duration_hrs": 61.0,
+      "stops": 0,
+      "checked_at": "2026-08-25T03:01:56.835222"
     }
   ]
 }
